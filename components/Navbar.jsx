@@ -1,34 +1,26 @@
 "use client";
 
-import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import GlassSurface from "./ui/GlassSurface";
 import { Menu } from "lucide-react";
-import { DropdownMenuContent, DropdownMenuTrigger, DropdownMenu } from "./ui/dropdown-menu";
+import {
+  DropdownMenuContent,
+  DropdownMenuTrigger,
+  DropdownMenu,
+} from "./ui/dropdown-menu";
 
 const Navbar = () => {
-  const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const breakpoint = 850;
 
   useEffect(() => {
     setMounted(true);
-
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < breakpoint);
-    };
-
-    // Initial check
+    const handleResize = () => setIsMobile(window.innerWidth < breakpoint);
     handleResize();
-
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
 
   const menuItems = [
     "Home",
@@ -42,10 +34,8 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="text-black dark:text-white p-4 px-6 sticky top-4 z-50 w-full">
+    <div className="text-white p-4 px-6 sticky top-4 z-50 w-full ">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-0 relative">
-        {/* Logo */}
-
         {/* Desktop Nav */}
         {!isMobile && (
           <>
@@ -74,28 +64,18 @@ const Navbar = () => {
           </>
         )}
 
-        {/* Mobile Nav (you can replace this with hamburger + sidebar later) */}
+        {/* Mobile Nav */}
         {isMobile && (
           <div className="flex flex-row items-center justify-between w-full mt-2">
             <h1 className="text-2xl font-bold z-10 text-center md:text-left">
               NexverseIITM
             </h1>
 
-            <DropdownMenu >
-              <DropdownMenuTrigger  >
-                {/* <GlassSurface
-                  width={50}
-                  height={50}
-                  blur={20}
-                  displace={1}
-                  brightness={60}
-                  opacity={0.9}
-                  className="w-fit"
-                > */}
-                  <Menu className="text-lg text-white border-none" />
-                {/* </GlassSurface> */}
+            <DropdownMenu>
+              <DropdownMenuTrigger>
+                <Menu className="text-white text-lg" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent className={'bg-transparent border-0'}>
+              <DropdownMenuContent className="bg-transparent border-0">
                 <GlassSurface
                   width={300}
                   height={menuItems.length * 50}

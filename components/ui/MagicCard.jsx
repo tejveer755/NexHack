@@ -64,26 +64,26 @@ export function MagicCard({
   }, [gradientSize, mouseX, mouseY]);
 
   return (
-    <div ref={cardRef} className={cn("group relative rounded-3xl ", className)}>
+    <div ref={cardRef} className={cn("group relative rounded-3xl", className)}>
       {showParticles && (
         <Particles
           className="absolute w-full h-full inset-0 z-1"
           quantity={100}
           ease={80}
           staticity={70}
-          vx={.6}
-          vy={.2}
+          vx={0.6}
+          vy={0.2}
           refresh
         />
       )}
 
       <motion.div
-        className="pointer-events-none absolute inset-0 rounded-[inherit] bg-border duration-300 group-hover:opacity-100"
+        className="pointer-events-none absolute inset-0 rounded-[inherit] duration-300 group-hover:opacity-100"
         style={{
           background: useMotionTemplate`
             radial-gradient(${gradientSize}px circle at ${mouseX}px ${mouseY}px,
-            ${gradientFrom}, 
-            ${gradientTo}, 
+            ${gradientFrom},
+            ${gradientTo},
             var(--border) 100%)
           `,
         }}

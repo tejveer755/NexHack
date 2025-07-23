@@ -2,73 +2,121 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import GlassSurface from "./ui/GlassSurface"; // Assuming this is a custom component
+import GlassSurface from "./ui/GlassSurface";
+import { Menu } from "lucide-react";
+import { DropdownMenuContent, DropdownMenuTrigger, DropdownMenu } from "./ui/dropdown-menu";
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const breakpoint = 850;
 
   useEffect(() => {
     setMounted(true);
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < breakpoint);
+    };
+
+    // Initial check
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
+  const menuItems = [
+    "Home",
+    "About",
+    "Timeline",
+    "Prizes",
+    "Mentors",
+    "Team",
+    "Sponsors",
+    "FAQ",
+  ];
+
   return (
     <div className="text-black dark:text-white p-4 px-6 sticky top-4 z-50 w-full">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-0 relative">
-        {/* Logo / Title */}
-        <h1 className="text-2xl font-bold z-10 text-center md:text-left">
-          NexverseIITM
-        </h1>
+        {/* Logo */}
 
-        {/* Nav Links - Centered on desktop */}
-        <div className="flex justify-center md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
-          <GlassSurface
-            width={600}
-            height={50}
-            blur={20}
-            displace={1}
-            brightness={60}
-            opacity={0.8}
-            className="w-fit"
-          >
-            <ul className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 px-4 py-2 md:py-0 text-sm md:text-base">
-              <li className="cursor-pointer">Home</li>
-              <li className="cursor-pointer">About</li>
-              <li className="cursor-pointer">Timeine</li>
-              <li className="cursor-pointer">Prizes</li>
-              <li className="cursor-pointer">Mentors</li>
-              <li className="cursor-pointer">Team</li>
-              <li className="cursor-pointer">Sponsors</li>
-              <li className="cursor-pointer">FaQ</li>
-            </ul>
-          </GlassSurface>
-        </div>
-
-        {/* Theme Toggle - Right side */}
-        {/* {mounted && (
-          <div className="flex justify-end">
-            <GlassSurface
-              width={60}
-              height={50}
-              blur={20}
-              displace={1}
-              brightness={60}
-              opacity={0.8}
-              className="cursor-pointer"
-            >
-              <button
-                onClick={toggleTheme}
-                className="w-full h-full flex items-center justify-center cursor-pointer text-sm"
+        {/* Desktop Nav */}
+        {!isMobile && (
+          <>
+            <h1 className="text-2xl font-bold z-10 text-center md:text-left">
+              NexverseIITM
+            </h1>
+            <div className="flex justify-center lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2">
+              <GlassSurface
+                width={600}
+                height={50}
+                blur={20}
+                displace={1}
+                brightness={60}
+                opacity={0.8}
+                className="w-fit"
               >
-                {theme === "dark" ? "Light" : "Dark"}
-              </button>
-            </GlassSurface>
+                <ul className="flex items-center space-x-6 px-4 py-2 text-base">
+                  {menuItems.map((item) => (
+                    <li key={item} className="cursor-pointer">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </GlassSurface>
+            </div>
+          </>
+        )}
+
+        {/* Mobile Nav (you can replace this with hamburger + sidebar later) */}
+        {isMobile && (
+          <div className="flex flex-row items-center justify-between w-full mt-2">
+            <h1 className="text-2xl font-bold z-10 text-center md:text-left">
+              NexverseIITM
+            </h1>
+
+            <DropdownMenu >
+              <DropdownMenuTrigger  >
+                {/* <GlassSurface
+                  width={50}
+                  height={50}
+                  blur={20}
+                  displace={1}
+                  brightness={60}
+                  opacity={0.9}
+                  className="w-fit"
+                > */}
+                  <Menu className="text-lg text-white border-none" />
+                {/* </GlassSurface> */}
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className={'bg-transparent border-0'}>
+                <GlassSurface
+                  width={300}
+                  height={menuItems.length * 50}
+                  blur={20}
+                  displace={10}
+                  brightness={60}
+                  opacity={0.9}
+                  className="w-fit"
+                >
+                  <ul className="flex flex-col items-center gap-6 px-4 py-3 text-base">
+                    {menuItems.map((item) => (
+                      <li key={item} className="cursor-pointer">
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </GlassSurface>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
-        )} */}
+        )}
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ import SponsorsSection from "@/components/SponsorsSection";
 import PrizeSection from "@/components/PrizeSection";
 import OurTeam from "@/components/OurTeam";
 import { FaQSection } from "@/components/FaQSection";
+import Footer from "@/components/Footer";
 
 function Page() {
   return (
@@ -23,7 +24,7 @@ function Page() {
       <SponsorsSection/>
       <OurTeam/>
       <FaQSection/>
-      <div className="flex items-center justify-center h-[100vh]"></div>
+      <Footer/>
     </div>
   );
 }

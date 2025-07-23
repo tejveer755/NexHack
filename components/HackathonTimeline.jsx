@@ -5,7 +5,7 @@ export function HackathonTimeline() {
   const data = [
     {
       title: "Registrations",
-      date: "August 20, 2025 -September 8, 2025 ",
+      date: "August 1, 2025 -September 8, 2025 ",
       content: (
         <p className="text-sm font-normal  md:text-base text-neutral-300">
           Official registrations are now open! Form your dream team and sign up to be part of the ultimate tech challenge.
@@ -47,7 +47,7 @@ export function HackathonTimeline() {
     },
     {
       title: "Offline Hackathon (Day 1)",
-      date: "September 19, 2025",
+      date: "September 26, 2025",
       content: (
         <div className="text-sm  md:text-base text-neutral-300">
           <p className="mb-4">Welcome to the final arena at IIITM, Janakpuri. Let the battle of brains begin!</p>
@@ -63,7 +63,7 @@ export function HackathonTimeline() {
     },
     {
       title: "Offline Hackathon (Day 2) + Grand Finale",
-      date: "September 20, 2025",
+      date: "September 27, 2025",
       content: (
         <div className="text-sm  md:text-base text-neutral-300">
           <p className="mb-4">Final sprint, final pitch – everything leads to this moment.</p>

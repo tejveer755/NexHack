@@ -7,20 +7,11 @@ export function HackathonTimeline() {
       title: "Registrations",
       date: "August 20, 2025 -September 8, 2025 ",
       content: (
-        <p className="text-sm font-normal text-neutral-700 md:text-base dark:text-neutral-300">
+        <p className="text-sm font-normal  md:text-base text-neutral-300">
           Official registrations are now open! Form your dream team and sign up to be part of the ultimate tech challenge.
         </p>
       ),
     },
-    // {
-    //   title: "Registrations Close",
-    //   date: "",
-    //   content: (
-    //     <p className="text-sm font-normal text-neutral-700 md:text-base dark:text-neutral-300">
-    //       The registration window has closed. Stay tuned as we verify teams and send out confirmations.
-    //     </p>
-    //   ),
-    // },
     {
       title: "Team Confirmation Phase",
       date: "September 9 – 13, 2025",
@@ -34,7 +25,7 @@ export function HackathonTimeline() {
       title: "Round 1: Online",
       date: "September 14, 2025",
       content: (
-        <div className="text-sm text-neutral-700 md:text-base dark:text-neutral-300">
+        <div className="text-sm  md:text-base text-neutral-300">
           <p className="mb-4">The virtual battle begins! All activities will be conducted online via Google Meet.</p>
           <ul className="list-disc space-y-2 pl-4">
             <li><span className="font-semibold">10:00 AM:</span> Kick-off & Problem Statement Release</li>
@@ -49,7 +40,7 @@ export function HackathonTimeline() {
       title: "Shortlisted Teams Announced",
       date: "September 15, 2025",
       content: (
-        <p className="text-sm font-normal text-neutral-700 md:text-base dark:text-neutral-300">
+        <p className="text-sm font-normal  md:text-base text-neutral-300">
           Congrats to the top teams who made it to the grand offline finale! Start packing your gear for an intense campus showdown.
         </p>
       ),
@@ -58,7 +49,7 @@ export function HackathonTimeline() {
       title: "Offline Hackathon (Day 1)",
       date: "September 19, 2025",
       content: (
-        <div className="text-sm text-neutral-700 md:text-base dark:text-neutral-300">
+        <div className="text-sm  md:text-base text-neutral-300">
           <p className="mb-4">Welcome to the final arena at IIITM, Janakpuri. Let the battle of brains begin!</p>
           <ul className="list-disc space-y-2 pl-4">
             <li><span className="font-semibold">9:00 AM – 10:00 AM:</span> Team Check-in & Welcome</li>
@@ -74,7 +65,7 @@ export function HackathonTimeline() {
       title: "Offline Hackathon (Day 2) + Grand Finale",
       date: "September 20, 2025",
       content: (
-        <div className="text-sm text-neutral-700 md:text-base dark:text-neutral-300">
+        <div className="text-sm  md:text-base text-neutral-300">
           <p className="mb-4">Final sprint, final pitch – everything leads to this moment.</p>
           <ul className="list-disc space-y-2 pl-4">
             <li><span className="font-semibold">8:00 AM – 9:00 AM:</span> Breakfast</li>

@@ -42,7 +42,7 @@ export const Timeline = ({ data }) => {
           bg-[length:300%_300%] text-center
           bg-gradient-to-r from-purple-400 via-blue-400 to-teal-300 border-b border-b-zinc-50 w-fit pb-3 mx-auto" 
         >
-          Event Execution Timeline
+          Event Execution Schedule
         </motion.h2>
       </div>
 

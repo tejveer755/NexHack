@@ -144,12 +144,12 @@ const OurTeam = () => {
       <div className="absolute inset-0  top-[0%] bg-gradient-to-br from-[#289b9b2a]  via-[#29b6b238] to-[#3274f0a6] [mask-image:radial-gradient(670px_circle_at_40%_50%,white,transparent)]"></div>
 
       {/* Header */}
-      <h2 className="text-4xl md:text-6xl font-extrabold text-center mb-12 bg-gradient-to-tr from-white via-zinc-300 to-gray-400 bg-clip-text text-transparent">
+      <h2 className="text-4xl md:text-6xl font-extrabold text-center mb-12 bg-gradient-to-tr from-white via-zinc-300 to-gray-400 bg-clip-text text-transparent border-b border-zinc-50 pb-3 w-fit mx-auto">
         Our Core Team
       </h2>
 
       {/* Grid Layout */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {teamMembers.map((member, idx) => (
           <div
             key={idx}

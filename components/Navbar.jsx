@@ -25,7 +25,7 @@ const Navbar = () => {
   const menuItems = [
     "Home",
     "About",
-    "Timeline",
+    "Schedule",
     "Prizes",
     "Mentors",
     "Team",

@@ -41,7 +41,7 @@ export function PrizeCard({
 export default function PrizeSection() {
   return (
     <div className="max-w-5xl min-h-screen mx-auto py-32 px-6 md:px-20 text-white">
-      <h2 className="text-5xl md:text-6xl text-center font-extrabold mb-32 bg-gradient-to-tr from-purple-400 via-pink-500 to-cyan-400 bg-clip-text text-transparent border-b border-zinc-700 w-fit pb-3 mx-auto">
+      <h2 className="text-5xl md:text-6xl text-center font-extrabold mb-32 bg-gradient-to-tr from-purple-400 via-orange-500 to-cyan-400 bg-clip-text text-transparent border-b border-zinc-50 w-fit pb-3 mx-auto ">
         Hackathon Prizes
       </h2>
 
@@ -59,7 +59,7 @@ export default function PrizeSection() {
           amount={10}
           extra="+ Goodies"
           textSize="text-4xl md:text-6xl"
-          gradient="bg-gradient-to-tr from-gray-400 via-gray-500 to-gray-600"
+          gradient="bg-gradient-to-tr from-gray-400 via-gray-300 to-gray-600"
           className="md:col-span-2 md:row-span-2 md:col-start-3 md:border-b border-zinc-700"
         />
         <PrizeCard

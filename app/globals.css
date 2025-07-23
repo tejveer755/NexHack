@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:where(.dark, .dark *));
+/* @custom-variant dark (&:where(.dark, .dark *)); */
 @theme inline {
   --animate-orbit: orbit calc(var(--duration) * 1s) linear infinite;
   --color-sidebar-ring: var(--sidebar-ring);

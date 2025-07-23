@@ -13,7 +13,7 @@ export function ThemeProviderWrapper({ children }) {
   }
 
   return (
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+    <ThemeProvider attribute="class" defaultTheme="dark" >
       {children}
     </ThemeProvider>
   )

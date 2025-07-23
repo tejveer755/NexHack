@@ -3,14 +3,14 @@ import { Particles } from "./ui/Particles"
 
 export default function SponsorSection() {
   const sponsors = [
-    { name: "TechCorp", logo: "/placeholder.svg?height=60&width=120&text=TechCorp" },
-    { name: "InnovateLab", logo: "/placeholder.svg?height=60&width=120&text=InnovateLab" },
-    { name: "CodeBase", logo: "/placeholder.svg?height=60&width=120&text=CodeBase" },
-    { name: "DevTools", logo: "/placeholder.svg?height=60&width=120&text=DevTools" },
-    { name: "CloudSync", logo: "/placeholder.svg?height=60&width=120&text=CloudSync" },
-    { name: "DataFlow", logo: "/placeholder.svg?height=60&width=120&text=DataFlow" },
-    { name: "AICore", logo: "/placeholder.svg?height=60&width=120&text=AICore" },
-    { name: "WebStack", logo: "/placeholder.svg?height=60&width=120&text=WebStack" },
+    { name: "TechCorp", logo: "/logo1.png" },
+    { name: "InnovateLab", logo: "/logo1.png" },
+    { name: "CodeBase", logo: "/logo1.png" },
+    { name: "DevTools", logo: "/logo1.png" },
+    { name: "CloudSync", logo: "/logo1.png" },
+    { name: "DataFlow", logo: "/logo1.png" },
+    { name: "AICore", logo: "/logo1.png" },
+    { name: "WebStack", logo: "/logo1.png" },
   ]
 
   return (

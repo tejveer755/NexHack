@@ -29,8 +29,8 @@ const Navbar = () => {
     "Schedule",
     "Prizes",
     "Mentors",
-    "Team",
     "Sponsors",
+    "Team",
     "FAQ",
   ];
 
@@ -40,9 +40,14 @@ const Navbar = () => {
         {/* Desktop Nav */}
         {!isMobile && (
           <>
-            <h1 className="text-2xl font-bold z-10 text-center md:text-left">
-              NexverseIITM
-            </h1>
+            <div className="w-24  h-auto z-10 text-center md:text-left">
+              <img
+                src="/nexverseiitmlogo.png"
+                alt="nexverse-iitm logo"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+
             <div className="flex justify-center lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2">
               <GlassSurface
                 width={600}
@@ -70,9 +75,13 @@ const Navbar = () => {
         {/* Mobile Nav */}
         {isMobile && (
           <div className="flex flex-row items-center justify-between w-full mt-2">
-            <h1 className="text-2xl font-bold z-10 text-center md:text-left">
-              NexverseIITM
-            </h1>
+            <div className="w-20 h-auto z-10 text-center md:text-left">
+              <img
+                src="/nexverseiitmlogo.png"
+                alt="nexverse-iitm logo"
+                className="w-full h-auto object-contain"
+              />
+            </div>
 
             <DropdownMenu>
               <DropdownMenuTrigger>

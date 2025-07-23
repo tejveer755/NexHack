@@ -38,10 +38,11 @@ export default function Footer() {
                     {/* Quick Links */}
                     <div className="flex flex-col items-center justify-end">
                         <h4 className="text-lg font-semibold mb-6 text-white">Quick Links</h4>
-                        <ul className="space-y-3 flex flex-col gap-x-18 flex-wrap max-h-[170px]">
+                        <ul className="space-y-3 flex flex-col gap-x-18 flex-wrap max-h-[200px]">
                             {[
                                 { name: "Register Now", href: "#" },
                                 { name: "About", href: "#about" },
+                                { name: "Our Team", href: "#team" },
                                 { name: "Schedule", href: "#schedule" },
                                 { name: "Prizes", href: "#prizes" },
                                 { name: "Sponsors", href: "#sponsors" },

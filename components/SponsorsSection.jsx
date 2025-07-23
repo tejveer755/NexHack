@@ -3,14 +3,14 @@ import { Particles } from "./ui/Particles"
 
 export default function SponsorSection() {
   const sponsors = [
-    { name: "TechCorp", logo: "/logo1.png" },
-    { name: "InnovateLab", logo: "/logo1.png" },
-    { name: "CodeBase", logo: "/logo1.png" },
-    { name: "DevTools", logo: "/logo1.png" },
-    { name: "CloudSync", logo: "/logo1.png" },
-    { name: "DataFlow", logo: "/logo1.png" },
-    { name: "AICore", logo: "/logo1.png" },
-    { name: "WebStack", logo: "/logo1.png" },
+    { name: "TechCorp", logo: "/nexverseiitmlogo.png" },
+    { name: "InnovateLab", logo: "/nexverseiitmlogo.png" },
+    { name: "CodeBase", logo: "/nexverseiitmlogo.png" },
+    { name: "DevTools", logo: "/nexverseiitmlogo.png" },
+    { name: "CloudSync", logo: "/nexverseiitmlogo.png" },
+    { name: "DataFlow", logo: "/nexverseiitmlogo.png" },
+    { name: "AICore", logo: "/nexverseiitmlogo.png" },
+    { name: "WebStack", logo: "/nexverseiitmlogo.png" },
   ]
 
   return (

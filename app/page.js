@@ -10,6 +10,7 @@ import PrizeSection from "@/components/PrizeSection";
 import OurTeam from "@/components/OurTeam";
 import { FaQSection } from "@/components/FaQSection";
 import Footer from "@/components/Footer";
+import CallToAction from "@/components/CallToAction";
 
 function Page() {
   return (
@@ -22,6 +23,7 @@ function Page() {
       <PrizeSection/>
       <Mentors/>
       <SponsorsSection/>
+      <CallToAction/>
       <OurTeam/>
       <FaQSection/>
       <Footer/>

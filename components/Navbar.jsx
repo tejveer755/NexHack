@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { useEffect, useState } from "react";
 import GlassSurface from "./ui/GlassSurface";
@@ -9,6 +9,7 @@ import {
   DropdownMenu,
 } from "./ui/dropdown-menu";
 import Link from "next/link";
+import {InteractiveHoverButton} from "@/components/magicui/InteractiveHoverButton"; // Make sure this path is correct
 
 const Navbar = () => {
   const [mounted, setMounted] = useState(false);
@@ -35,12 +36,12 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="text-white p-4 px-6 sticky top-4 z-50 w-full ">
+    <div className="text-white p-4 px-6 sticky top-4 z-50 w-full">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-0 relative">
         {/* Desktop Nav */}
         {!isMobile && (
           <>
-            <div className="w-24  h-auto z-10 text-center md:text-left">
+            <div className="w-24 h-auto z-10 text-center md:text-left">
               <img
                 src="/nexverseiitmlogo.png"
                 alt="nexverse-iitm logo"
@@ -69,13 +70,22 @@ const Navbar = () => {
                 </ul>
               </GlassSurface>
             </div>
+
+            {/* Register Button for Desktop */}
+            <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
+              <Link href="#">
+                <InteractiveHoverButton>
+                  Registers open1!!
+                </InteractiveHoverButton>
+              </Link>
+            </div>
           </>
         )}
 
         {/* Mobile Nav */}
         {isMobile && (
           <div className="flex flex-row items-center justify-between w-full mt-2">
-            <div className="w-20 h-auto z-10 text-center md:text-left">
+            <div className="w-20 h-auto z-10 text-center">
               <img
                 src="/nexverseiitmlogo.png"
                 alt="nexverse-iitm logo"
@@ -83,32 +93,36 @@ const Navbar = () => {
               />
             </div>
 
-            <DropdownMenu>
-              <DropdownMenuTrigger>
-                <Menu className="text-white text-lg" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-transparent border-0">
-                <GlassSurface
-                  width={300}
-                  height={menuItems.length * 50}
-                  blur={20}
-                  displace={10}
-                  brightness={60}
-                  opacity={0.9}
-                  className="w-fit"
-                >
-                  <ul className="flex flex-col items-center gap-6 px-4 py-3 text-base">
-                    {menuItems.map((item) => (
-                      <li key={item} className="cursor-pointer">
-                        <Link href={`/#${item.toLowerCase()}`}>
-                          {item}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </GlassSurface>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <div className="flex items-center gap-2">
+              {/* Register Button for Mobile */}
+
+              <DropdownMenu>
+                <DropdownMenuTrigger>
+                  <Menu className="text-white text-lg" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="bg-transparent border-0">
+                  <GlassSurface
+                    width={300}
+                    height={menuItems.length * 50}
+                    blur={20}
+                    displace={10}
+                    brightness={60}
+                    opacity={0.9}
+                    className="w-fit"
+                  >
+                    <ul className="flex flex-col items-center gap-6 px-4 py-3 text-base">
+                      {menuItems.map((item) => (
+                        <li key={item} className="cursor-pointer">
+                          <Link href={`/#${item.toLowerCase()}`}>
+                            {item}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </GlassSurface>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
           </div>
         )}
       </div>

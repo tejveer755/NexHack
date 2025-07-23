@@ -14,7 +14,7 @@ export default function SponsorSection() {
   ]
 
   return (
-    <section className="relative  py-24 overflow-hidden">
+    <section className="relative  py-24 overflow-hidden" id="sponsors">
       {/* Gradient masks */}
       <div className="absolute inset-0 z[2]">
         <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black/20" />

@@ -86,7 +86,7 @@ const FeatureCard = ({ feature }) => {
 // --- Main Section ---
 const HackathonFeatures = () => {
   return (
-    <section className="relative py-12 sm:py-16 lg:py-20 mt-4 overflow-hidden text-white">
+    <section className="relative py-12 sm:py-16 lg:py-20 mt-4 overflow-hidden text-white" id='about'>
       {/* <Particles className="absolute inset-0 -z-10" /> */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}

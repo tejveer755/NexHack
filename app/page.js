@@ -1,4 +1,4 @@
-import HeroBackground from "@/components/HeroBackground";
+import HeroBackground from "@/components/ui/HeroBackground";
 import React from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
@@ -13,7 +13,7 @@ import Footer from "@/components/Footer";
 
 function Page() {
   return (
-    <div className="relative">
+    <div className="relative scroll-smooth">
       <Navbar />
       <HeroBackground />
       <HeroSection />

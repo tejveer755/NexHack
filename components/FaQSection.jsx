@@ -7,7 +7,7 @@ import {
 
 export function FaQSection() {
   return (
-    <div className="flex flex-col gap-3.5 items-center justify-center max-w-6xl mx-auto">
+    <div className="flex flex-col gap-3.5 items-center justify-center max-w-6xl max-h-[600px] mx-auto" id="faq">
       <h2 className="text-3xl md:text-4xl text-center font-extrabold mb-32 bg-gradient-to-tr from-slate-100 via-gray-200 to-zinc-400 bg-clip-text text-transparent border-b border-b-zinc-50 w-fit pb-3 mx-auto">
         Frequently Asked Questions
       </h2>

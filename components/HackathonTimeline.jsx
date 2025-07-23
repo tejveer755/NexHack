@@ -81,7 +81,7 @@ export function HackathonTimeline() {
   ];
 
   return (
-    <div className="relative w-full overflow-clip">
+    <div className="relative w-full overflow-clip" id="schedule">
       <Timeline data={data} />
     </div>
   );

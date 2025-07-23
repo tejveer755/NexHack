@@ -21,7 +21,7 @@ import { InteractiveHoverButton } from "./magicui/InteractiveHoverButton";
 
 function HeroSection() {
     return (
-        <div className="relative px-6  text-white">
+        <div className="relative px-6  text-white" id="home">
             <div className="flex flex-col lg:flex-row items-center justify-between min-h-[90vh] mt-16 lg:mt-0 gap-12">
                 {/* Left Content */}
                 <div className="w-full lg:w-1/2 pl-7 flex flex-col justify-start gap-3">

@@ -46,7 +46,7 @@ function Mentors() {
   ];
 
   return (
-    <section className="py-20 px-4 md:px-8 relative lg:px-10 ">
+    <section className="py-20 px-4 md:px-8 relative lg:px-10 " id='mentors'>
       <motion.h2
         initial={{ backgroundPosition: '0% 50%' }}
         animate={{ backgroundPosition: '100% 50%' }}

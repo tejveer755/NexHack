@@ -28,7 +28,7 @@ export default function Footer() {
                                 <span>September 26-27, 2025</span>
                             </div>
                             <div className="flex items-center text-sm text-gray-300">
-                                <MapPin className="w-4 h-4 mr-2 text-yellow-400" />
+                                <MapPin size={20} className="w-4 h-4 mr-2 text-xl text-yellow-400" />
                                 <span>Institute of Information Technology & Management D-29,
                                     Institutional Area, Janakpuri, New Delhi-110058</span>
                             </div>
@@ -38,13 +38,14 @@ export default function Footer() {
                     {/* Quick Links */}
                     <div className="flex flex-col items-center justify-end">
                         <h4 className="text-lg font-semibold mb-6 text-white">Quick Links</h4>
-                        <ul className="space-y-3">
+                        <ul className="space-y-3 flex flex-col gap-x-18 flex-wrap max-h-[170px]">
                             {[
-                                { name: "Register Now", href: "#register" },
+                                { name: "Register Now", href: "#" },
+                                { name: "About", href: "#about" },
                                 { name: "Schedule", href: "#schedule" },
                                 { name: "Prizes", href: "#prizes" },
                                 { name: "Sponsors", href: "#sponsors" },
-                                { name: "Mentors", href: "#rules" },
+                                { name: "Mentors", href: "#mentors" },
                                 { name: "FAQ", href: "#faq" },
                             ].map((link) => (
                                 <li key={link.name}>

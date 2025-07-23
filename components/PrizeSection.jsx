@@ -40,7 +40,7 @@ export function PrizeCard({
 // Section component
 export default function PrizeSection() {
   return (
-    <div className="max-w-5xl min-h-screen mx-auto py-32 px-6 md:px-20 text-white">
+    <div className="max-w-5xl min-h-screen mx-auto py-32 px-6 md:px-20 text-white" id="prizes">
       <h2 className="text-5xl md:text-6xl text-center font-extrabold mb-32 bg-gradient-to-tr from-purple-400 via-orange-500 to-cyan-400 bg-clip-text text-transparent border-b border-zinc-50 w-fit pb-3 mx-auto ">
         Hackathon Prizes
       </h2>

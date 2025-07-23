@@ -44,13 +44,13 @@ const GlassSurface = ({
   const filterId = `glass-filter-${uniqueId}`;
   const redGradId = `red-grad-${uniqueId}`;
   const blueGradId = `blue-grad-${uniqueId}`;
-  
-  const containerRef = useRef (null);
-  const feImageRef = useRef  (null);
-  const redChannelRef = useRef  (null);
-  const greenChannelRef = useRef  (null);
-  const blueChannelRef = useRef  (null);
-  const gaussianBlurRef = useRef  (null);
+
+  const containerRef = useRef(null);
+  const feImageRef = useRef(null);
+  const redChannelRef = useRef(null);
+  const greenChannelRef = useRef(null);
+  const blueChannelRef = useRef(null);
+  const gaussianBlurRef = useRef(null);
 
   const isDarkMode = useDarkMode();
 
@@ -159,18 +159,18 @@ const GlassSurface = ({
   }, [width, height]);
 
   const supportsSVGFilters = () => {
-  if (typeof navigator === "undefined") return false; // ✅ SSR check
+    if (typeof navigator === "undefined") return false; // ✅ SSR check
 
-  const isWebkit =
-    /Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent);
-  const isFirefox = /Firefox/.test(navigator.userAgent);
+    const isWebkit =
+      /Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent);
+    const isFirefox = /Firefox/.test(navigator.userAgent);
 
-  if (isWebkit || isFirefox) return false;
+    if (isWebkit || isFirefox) return false;
 
-  const div = document.createElement("div");
-  div.style.backdropFilter = `url(#blurFilter)`; // use actual ID if needed
-  return div.style.backdropFilter !== "";
-};
+    const div = document.createElement("div");
+    div.style.backdropFilter = `url(#blurFilter)`; // use actual ID if needed
+    return div.style.backdropFilter !== "";
+  };
 
 
   const supportsBackdropFilter = () => {
@@ -217,26 +217,14 @@ const GlassSurface = ({
              0px 16px 56px rgba(17, 17, 26, 0.05) inset`,
       };
     } else {
-      if (isDarkMode) {
-        if (!backdropFilterSupported) {
-          return {
-            ...baseStyles,
-            background: "rgba(0, 0, 0, 0.4)",
-            border: "1px solid rgba(255, 255, 255, 0.2)",
-            boxShadow: `inset 0 1px 0 0 rgba(255, 255, 255, 0.2),
+      if (!backdropFilterSupported) {
+        return {
+          ...baseStyles,
+          background: "rgba(0, 0, 0, 0.4)",
+          border: "1px solid rgba(255, 255, 255, 0.2)",
+          boxShadow: `inset 0 1px 0 0 rgba(255, 255, 255, 0.2),
                         inset 0 -1px 0 0 rgba(255, 255, 255, 0.1)`,
-          };
-        } else {
-          return {
-            ...baseStyles,
-            background: "rgba(255, 255, 255, 0.1)",
-            backdropFilter: "blur(12px) saturate(1.8) brightness(1.2)",
-            WebkitBackdropFilter: "blur(12px) saturate(1.8) brightness(1.2)",
-            border: "1px solid rgba(255, 255, 255, 0.2)",
-            boxShadow: `inset 0 1px 0 0 rgba(255, 255, 255, 0.2),
-                        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1)`,
-          };
-        }
+        };
       } else {
         if (!backdropFilterSupported) {
           return {

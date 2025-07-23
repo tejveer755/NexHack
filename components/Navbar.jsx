@@ -8,6 +8,7 @@ import {
   DropdownMenuTrigger,
   DropdownMenu,
 } from "./ui/dropdown-menu";
+import Link from "next/link";
 
 const Navbar = () => {
   const [mounted, setMounted] = useState(false);
@@ -55,7 +56,9 @@ const Navbar = () => {
                 <ul className="flex items-center space-x-6 px-4 py-2 text-base">
                   {menuItems.map((item) => (
                     <li key={item} className="cursor-pointer">
-                      {item}
+                      <Link href={`/#${item.toLowerCase()}`}>
+                        {item}
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -88,7 +91,9 @@ const Navbar = () => {
                   <ul className="flex flex-col items-center gap-6 px-4 py-3 text-base">
                     {menuItems.map((item) => (
                       <li key={item} className="cursor-pointer">
-                        {item}
+                        <Link href={`/#${item.toLowerCase()}`}>
+                          {item}
+                        </Link>
                       </li>
                     ))}
                   </ul>

@@ -31,7 +31,7 @@ function HeroSection() {
                 {/* Left Content */}
                 <div className="w-full lg:w-1/2 lg:pl-7 flex flex-col justify-start gap-3">
                     <BoxReveal boxColor={"#d900ff"} duration={0.5}>
-                        <h2 className={` bg-gradient-to-tr from-sky-400 via-fuchsia-300 to-orange-400 bg-clip-text text-transparent font-extrabold   border-b-4 mb-3 border-zinc-400 pb-12 rounded-b-[40%]         text-[55px] md:text-7xl lg:text-[90px] text-start text-nowrap ${orbitron.className}`}>
+                        <h2 className={` bg-gradient-to-tr from-sky-400 via-fuchsia-300 to-orange-400 bg-clip-text text-transparent font-extrabold   border-b-4 mb-3 border-zinc-400 pb-12 rounded-b-[40%]         text-[2.6rem] md:text-7xl lg:text-[90px] text-start text-nowrap ${orbitron.className}`}>
                             NEXHACK 1.0
                         </h2>
                     </BoxReveal>

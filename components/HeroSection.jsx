@@ -26,8 +26,8 @@ function HeroSection() {
                 {/* Left Content */}
                 <div className="w-full lg:w-1/2 pl-7 flex flex-col justify-start gap-3">
                     <BoxReveal boxColor={"#EA2F14"} duration={0.5}>
-                        <h2 className="bg-gradient-to-l from-blue-800 via-orange-300 to-amber-600 bg-clip-text text-transparent font-bold text-7xl border-b-4 mb-3 border-zinc-400 pb-12 rounded-b-[40%] lg:text-9xl text-start">
-                            NEXHACK
+                        <h2 className="font-logo bg-gradient-to-tr from-sky-400 via-fuchsia-300 to-orange-400 bg-clip-text text-transparent font-extrabold  text-7xl border-b-4 mb-3 border-zinc-400 pb-12 rounded-b-[40%] lg:text-[90px] text-start">
+                            NEXHACK 1.0
                         </h2>
                     </BoxReveal>
 
@@ -36,7 +36,7 @@ function HeroSection() {
                             Build. Collaborate. Compete.
                             <br />
                             <span className="font-bold">Nexhack</span> is a 24-hour hackathon by{" "}
-                            <span className="text-cyan-400 font-semibold">Nexverse</span>, IITM’s tech society —
+                            <span className="text-cyan-400 font-semibold">Nexverse-IITM</span>, 
                             where students from all over come together to create something amazing.
                         </h2>
                     </BoxReveal>

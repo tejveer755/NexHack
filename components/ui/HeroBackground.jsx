@@ -5,8 +5,8 @@ import { useRef, useEffect } from 'react';
 export default function HeroBackground() {
   return (
     <div className="absolute inset-0 w-full z-[-1] min-h-screen bg-black text-white font-sans overflow-hidden">
-      <div className="absolute inset-0  bg-gradient-to-br from-[#c88f4e] via-30% via-[#6320e8] to-[#121294] [mask-image:radial-gradient(900px_circle_at_0%_10%,white,transparent)]"></div>
-      <div className="absolute inset-0   bg-gradient-to-br from-[#ee8a18]  via-transparent  to-[#184598] [mask-image:radial-gradient(670px_circle_at_60%_5%,white,transparent)]"></div>
+      <div className="absolute inset-0  bg-gradient-to-br from-[#f29af8] via-30% via-[#6320e8] to-[#121294] [mask-image:radial-gradient(900px_circle_at_0%_10%,white,transparent)]"></div>
+      <div className="absolute inset-0   bg-gradient-to-br from-[#ab2aec]  via-transparent  to-[#184598] [mask-image:radial-gradient(670px_circle_at_60%_5%,white,transparent)]"></div>
       <div className="absolute inset-0  top-[10%] bg-gradient-to-br from-[#289b9b2a]  via-[#ec922438] to-[#3274f03a] [mask-image:radial-gradient(670px_circle_at_70%_35%,white,transparent)]"></div>
       <div className="
    bg-[radial-gradient(circle_at_30%_140%,bg-black,transparent_37%),radial-gradient(circle_at_50%_310%,#0400ff26,#a2a68700_78%),linear-gradient(transparent,#0d0a195e),radial-gradient(circle_at_50%_-30%,#a85c5c33,#67454500),radial-gradient(90%_10%_at_50%_0,#a85c5c0d,#67454500_90%)] absolute inset-0 top-[20%]"></div>

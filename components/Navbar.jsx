@@ -84,8 +84,9 @@ const Navbar = () => {
 
         {/* Mobile Nav */}
         {isMobile && (
-          <div className="flex flex-row items-center justify-between w-full mt-2">
-            <div className="w-20 h-auto z-10 text-center">
+          <div className="flex flex-row items-center justify-between w-full -mt-4">
+            <div className="mt-2 flex w-full flex-row items-center justify-between rounded-2xl border border-white/20 bg-white/10 p-2 backdrop-blur-lg ">
+            <div className="w-15 h-auto z-10 text-center">
               <img
                 src="/nexverseiitmlogo.png"
                 alt="nexverse-iitm logo"
@@ -123,6 +124,7 @@ const Navbar = () => {
                 </DropdownMenuContent>
               </DropdownMenu>
             </div>
+          </div>
           </div>
         )}
       </div>

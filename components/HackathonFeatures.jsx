@@ -94,7 +94,7 @@ const HackathonFeatures = () => {
           <h2 className="text-3xl font-extrabold sm:text-4xl lg:text-5xl">
             Why Join Our Hackathon?
           </h2>
-          <p className="mt-4 text-lg text-slate-400 max-w-3xl mx-auto">
+          <p className="mt-4 text-lg text-zinc-300 max-w-3xl mx-auto">
             Experience a weekend of intense learning, building, and networking. Here’s what makes our event unmissable.
           </p>
         </div>

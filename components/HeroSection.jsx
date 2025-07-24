@@ -36,7 +36,7 @@ function HeroSection() {
                             Build. Collaborate. Compete.
                             <br />
                             <span className="font-bold">Nexhack</span> is a 24-hour hackathon by{" "}
-                            <span className="text-cyan-400 font-semibold">Nexverse-IITM</span>, 
+                            <span className="text-amber-400 font-semibold">Nexverse-IITM</span>,
                             where students from all over come together to create something amazing.
                         </h2>
                     </BoxReveal>
@@ -61,7 +61,7 @@ function HeroSection() {
                     </BoxReveal>
 
                     <BoxReveal boxColor={"#E6521F"} duration={0.75}>
-                        <InteractiveHoverButton>
+                        <InteractiveHoverButton className={' bg-gradient-to-tr from-pink-500 to-orange-400'}>
                             <p className="rounded-full w-fit text-xl sm:text-base">
                                 Register Now
                             </p>

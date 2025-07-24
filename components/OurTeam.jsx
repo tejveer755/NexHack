@@ -1,6 +1,7 @@
 'use client';
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
+import { ExpandableWrapper } from "./ui/ExpandableWrapper";
 
 const OurTeam = () => {
   const teamMembers = [
@@ -140,6 +141,8 @@ const OurTeam = () => {
   ];
 
   return (
+    <ExpandableWrapper className="mb-36">
+
     <div className="py-24 px-6 md:px-16 relative text-white" id="team">
       <div className="absolute inset-0  top-[0%] bg-gradient-to-br from-[#289b9b2a]  via-[#29b6b238] to-[#3274f0a6] [mask-image:radial-gradient(670px_circle_at_40%_50%,white,transparent)]"></div>
 
@@ -187,6 +190,8 @@ const OurTeam = () => {
         ))}
       </div>
     </div>
+        </ExpandableWrapper>
+
   );
 };
 

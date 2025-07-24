@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function Footer() {
     return (
         <footer className="relative border-t border-gray-800   mt-48 text-white overflow-hidden">
-              <div className="absolute inset-0  top-[0%] bg-gradient-to-t from-[#289b9b2a]  via-[#b6a12938] to-[#ca821754] [mask-image:radial-gradient(670px_circle_at_50%_0%,white,transparent)]"></div>
+              <div className="absolute inset-0  top-[0%] bg-gradient-to-t from-[#9b28732a]  via-[#3ca8c454] to-[#a332e054] [mask-image:radial-gradient(670px_circle_at_50%_0%,white,transparent)]"></div>
 
             {/* Main footer content */}
             <div className="relative z-10 container mx-auto px-4 py-16">

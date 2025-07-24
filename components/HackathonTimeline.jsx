@@ -3,24 +3,24 @@ import { Timeline } from "@/components/ui/timeline"; // Assuming this component 
 
 export function HackathonTimeline() {
   const data = [
-    {
-      title: "Registrations",
-      date: "August 1, 2025 -September 8, 2025 ",
-      content: (
-        <p className="text-sm font-normal  md:text-base text-neutral-300">
-          Official registrations are now open! Form your dream team and sign up to be part of the ultimate tech challenge.
-        </p>
-      ),
-    },
-    {
-      title: "Team Confirmation Phase",
-      date: "September 9 – 13, 2025",
-      content: (
-        <p className="text-sm font-normal text-neutral-700 md:text-base dark:text-neutral-300">
-          Teams will be confirmed via Devfolio and email. Make sure to keep an eye on your inbox!
-        </p>
-      ),
-    },
+    // {
+    //   title: "Registrations",
+    //   date: "August 1, 2025 -September 8, 2025 ",
+    //   content: (
+    //     <p className="text-sm font-normal  md:text-base text-neutral-300">
+    //       Official registrations are now open! Form your dream team and sign up to be part of the ultimate tech challenge.
+    //     </p>
+    //   ),
+    // },
+    // {
+    //   title: "Team Confirmation Phase",
+    //   date: "September 9 – 13, 2025",
+    //   content: (
+    //     <p className="text-sm font-normal text-neutral-700 md:text-base dark:text-neutral-300">
+    //       Teams will be confirmed via Devfolio and email. Make sure to keep an eye on your inbox!
+    //     </p>
+    //   ),
+    // },
     {
       title: "Round 1: Online",
       date: "September 14, 2025",

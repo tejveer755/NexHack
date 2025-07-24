@@ -54,8 +54,8 @@ const Navbar = () => {
                 width={600}
                 height={50}
                 blur={20}
-                displace={1}
-                brightness={60}
+                displace={5}
+                brightness={80}
                 opacity={0.8}
                 className="w-fit"
               >
@@ -85,7 +85,7 @@ const Navbar = () => {
         {/* Mobile Nav */}
         {isMobile && (
           <div className="flex flex-row items-center justify-between w-full -mt-4">
-            <div className="mt-2 flex w-full flex-row items-center justify-between rounded-2xl border border-white/20 bg-white/10 p-2 backdrop-blur-lg ">
+            <div className="mt-2 flex w-full flex-row items-center justify-between rounded-2xl border border-white/20 bg-white/5 p-2 backdrop-blur-md ">
             <div className="w-15 h-auto z-10 text-center">
               <img
                 src="/nexverseiitmlogo.png"
@@ -101,12 +101,12 @@ const Navbar = () => {
                 <DropdownMenuTrigger>
                   <Menu className="text-white text-lg" />
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="bg-transparent border-0">
+                <DropdownMenuContent className="bg-transparent border-0 mr-8 mt-6">
                   <GlassSurface
                     width={300}
                     height={menuItems.length * 50}
-                    blur={20}
-                    displace={10}
+                    blur={8}
+                    displace={3}
                     brightness={60}
                     opacity={0.9}
                     className="w-fit"

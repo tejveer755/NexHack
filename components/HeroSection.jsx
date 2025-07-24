@@ -18,21 +18,26 @@ import {
 } from "react-icons/si";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { InteractiveHoverButton } from "./magicui/InteractiveHoverButton";
+import {  Orbitron } from 'next/font/google'
 
+const orbitron = Orbitron({
+    // variable: "--font-orbintron",
+  subsets: ["latin"],
+})
 function HeroSection() {
     return (
-        <div className="relative px-6  text-white overflow-hidden" id="home">
+        <div className="relative px-6 border-[#d900ff] text-white overflow-hidden" id="home">
             <div className="flex flex-col lg:flex-row items-center justify-between min-h-[90vh] mt-16 lg:mt-0 gap-12">
                 {/* Left Content */}
-                <div className="w-full lg:w-1/2 pl-7 flex flex-col justify-start gap-3">
-                    <BoxReveal boxColor={"#EA2F14"} duration={0.5}>
-                        <h2 className="font-logo bg-gradient-to-tr from-sky-400 via-fuchsia-300 to-orange-400 bg-clip-text text-transparent font-extrabold  text-4xl border-b-4 mb-3 border-zinc-400 pb-12 rounded-b-[40%] lg:text-[90px] text-start">
+                <div className="w-full lg:w-1/2 lg:pl-7 flex flex-col justify-start gap-3">
+                    <BoxReveal boxColor={"#d900ff"} duration={0.5}>
+                        <h2 className={` bg-gradient-to-tr from-sky-400 via-fuchsia-300 to-orange-400 bg-clip-text text-transparent font-extrabold   border-b-4 mb-3 border-zinc-400 pb-12 rounded-b-[40%]         text-[55px] md:text-7xl lg:text-[90px] text-start text-nowrap ${orbitron.className}`}>
                             NEXHACK 1.0
                         </h2>
                     </BoxReveal>
 
-                    <BoxReveal boxColor={"#E6521F"} duration={0.6}>
-                        <h2 className="text-white font-semibold text-lg md:text-xl">
+                    <BoxReveal boxColor={"#d900ff"} duration={0.67}>
+                        <h2 className="text-white font-semibold text-md md:text-xl">
                             Build. Collaborate. Compete.
                             <br />
                             <span className="font-bold">Nexhack</span> is a 24-hour hackathon by{" "}
@@ -41,7 +46,7 @@ function HeroSection() {
                         </h2>
                     </BoxReveal>
 
-                    <BoxReveal boxColor={"#E6521F"} duration={0.65}>
+                    <BoxReveal boxColor={"#d900ff"} duration={0.85}>
                         <h2 className="text-white font-semibold text-md leading-relaxed">
                             🗓 Registrations Starts
                             <span className="font-bold"> 1st Aug</span>
@@ -52,7 +57,7 @@ function HeroSection() {
                         </h2>
                     </BoxReveal>
 
-                    <BoxReveal boxColor={"#E6521F"} duration={0.7}>
+                    <BoxReveal boxColor={"#d900ff"} duration={0.7}>
                         <h2 className="text-white font-semibold text-lg sm:text-xl md:text-2xl leading-relaxed">
                             Meals, stay, swags,{" "}
                             <span className="font-semibold">certificates</span> &{" "}

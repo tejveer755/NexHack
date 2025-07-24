@@ -5,7 +5,7 @@ import { MagicCard } from './ui/MagicCard';
 
 export default function CallToAction() {
   return (
-    <section className="relative py-20 px-6 md:px-16 my-6 bg-transparent flex items-center justify-center overflow-hidden">
+    <section className="relative py-20 px-6 md:px-16 my-6 bg-transparent flex items-center justify-center ">
       {/* Soft background glow */}
       <div className="absolute inset-0 top-[15%] flex items-center justify-center pointer-events-none z-0">
         <div className="w-[500px] h-[500px] bg-gradient-to-br from-purple-600/20 via-amber-400/40 to-blue-500/20 blur-3xl rounded-full"></div>

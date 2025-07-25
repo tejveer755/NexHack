@@ -20,7 +20,7 @@ function Page() {
       <HeroBackground />
       <HeroSection />
       <HackathonFeatures/>
-      {/* <ProblemStatements/> */}
+      <ProblemStatements/>
       <HackathonTimeline/>
       <PrizeSection/>
       <Mentors/>

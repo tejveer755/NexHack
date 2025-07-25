@@ -11,6 +11,7 @@ import OurTeam from "@/components/OurTeam";
 import { FaQSection } from "@/components/FaQSection";
 import Footer from "@/components/Footer";
 import CallToAction from "@/components/CallToAction";
+import ProblemStatements from "@/components/ProblemStatements";
 
 function Page() {
   return (
@@ -19,6 +20,7 @@ function Page() {
       <HeroBackground />
       <HeroSection />
       <HackathonFeatures/>
+      {/* <ProblemStatements/> */}
       <HackathonTimeline/>
       <PrizeSection/>
       <Mentors/>

@@ -34,7 +34,7 @@ export const Timeline = ({ data }) => {
           initial={{ backgroundPosition: '0% 50%' }}
           animate={{ backgroundPosition: '100% 50%' }}
           transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
-          className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 
+          className="text-4xl md:text-6xl font-bold mb-4 
           text-transparent bg-clip-text 
           bg-[length:300%_300%] text-center
           bg-gradient-to-r from-purple-400 via-blue-400 to-teal-300 border-b border-zinc-600 w-fit pb-3 mx-auto" 

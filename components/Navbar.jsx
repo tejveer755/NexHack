@@ -75,7 +75,7 @@ const Navbar = () => {
             <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
               <Link href="#">
                 <InteractiveHoverButton>
-                  Registers open1!!
+                  Registers open!!
                 </InteractiveHoverButton>
               </Link>
             </div>

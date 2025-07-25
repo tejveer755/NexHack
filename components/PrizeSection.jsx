@@ -5,7 +5,7 @@ import CountUp from "./ui/CountUp";
 
 // Card component
 const boxClasses =
-  "flex flex-col items-start justify-center p-6 shadow-lg transition-transform duration-300";
+  "flex flex-col items-start justify-center p-6  transition-transform duration-300";
 
 export function PrizeCard({
   title,

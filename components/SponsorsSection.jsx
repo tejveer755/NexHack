@@ -51,7 +51,7 @@ export default function SponsorSection() {
                 className="group relative flex items-center justify-center p-6 rounded-2xl border border-gray-800/50 bg-gray-900/20 backdrop-blur-sm hover:border-gray-700/50 transition-all duration-300 hover:scale-105"
               >
                 {/* Hover glow effect */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500/0 via-purple-500/0 to-pink-500/0 group-hover:from-blue-500/10 group-hover:via-purple-500/10 group-hover:to-pink-500/10 transition-all duration-300" />
+                {/* <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500/0 via-purple-500/0 to-pink-500/0 group-hover:from-blue-500/10 group-hover:via-purple-500/10 group-hover:to-pink-500/10 transition-all duration-300" /> */}
 
                 <Image
                   src={sponsor.logo || "/placeholder.svg"}

@@ -12,8 +12,8 @@ export default function Footer() {
                     {/* Brand Section */}
                     <div className="lg:col-span-1 px-7">
                         <div className="mb-6">
-                            <h3 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-orange-600 to-orange-500 bg-clip-text text-transparent">
-                                Nexhack 2024
+                            <h3 className="text-2xl font-bold bg-gradient-to-tr from-sky-400 via-fuchsia-300 to-orange-400 bg-clip-text text-transparent">
+                                Nexhack 1.0
                             </h3>
                             <p className="text-gray-400 mt-2 text-sm leading-relaxed">
                                 Join the ultimate 24+ hour coding challenge. Build, innovate, and compete with the best developers
@@ -36,30 +36,30 @@ export default function Footer() {
                     </div>
 
                     {/* Quick Links */}
-                    <div className="flex flex-col items-center justify-end">
-                        <h4 className="text-lg font-semibold mb-6 text-white">Quick Links</h4>
-                        <ul className="space-y-3 flex flex-col gap-x-18 flex-wrap max-h-[200px]">
-                            {[
-                                { name: "Register Now", href: "#" },
-                                { name: "About", href: "#about" },
-                                { name: "Our Team", href: "#team" },
-                                { name: "Schedule", href: "#schedule" },
-                                { name: "Prizes", href: "#prizes" },
-                                { name: "Sponsors", href: "#sponsors" },
-                                { name: "Mentors", href: "#mentors" },
-                                { name: "FAQ", href: "#faq" },
-                            ].map((link) => (
-                                <li key={link.name}>
-                                    <Link
-                                        href={link.href}
-                                        className="text-gray-400 text-center hover:text-yellow-400 transition-colors duration-200 text-sm"
-                                    >
-                                        {link.name}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+                    <div className="lg:pl-8">
+    <h4 className="text-lg font-semibold mb-6 text-white">Quick Links</h4>
+    <ul className="space-y-3 flex flex-col gap-x-1 flex-wrap max-h-[200px]">
+        {[
+            { name: "Register Now", href: "#" },
+            { name: "About", href: "#about" },
+            { name: "Our Team", href: "#team" },
+            { name: "Schedule", href: "#schedule" },
+            { name: "Prizes", href: "#prizes" },
+            { name: "Sponsors", href: "#sponsors" },
+            { name: "Mentors", href: "#mentors" },
+            { name: "FAQ", href: "#faq" },
+        ].map((link) => (
+            <li key={link.name}>
+                <Link
+                    href={link.href}
+                    className="text-gray-400 hover:text-yellow-400 transition-colors duration-200 text-sm"
+                >
+                    {link.name}
+                </Link>
+            </li>
+        ))}
+    </ul>
+</div>
 
 
                     {/* Contact & Social */}

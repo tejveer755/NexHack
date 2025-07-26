@@ -7,6 +7,8 @@ import {
     FaPython,
     FaDocker,
     FaAws,
+    FaDiscord,
+    FaWhatsapp,
 } from "react-icons/fa";
 import {
     SiMongodb,
@@ -18,11 +20,12 @@ import {
 } from "react-icons/si";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { InteractiveHoverButton } from "./magicui/InteractiveHoverButton";
-import {  Orbitron } from 'next/font/google'
+import { Orbitron } from 'next/font/google'
+import Link from "next/link";
 
 const orbitron = Orbitron({
     // variable: "--font-orbintron",
-  subsets: ["latin"],
+    subsets: ["latin"],
 })
 function HeroSection() {
     return (
@@ -66,11 +69,17 @@ function HeroSection() {
                     </BoxReveal>
 
                     <BoxReveal boxColor={"#d900ff"} duration={0.75}>
-                        <InteractiveHoverButton className={' bg-gradient-to-tr from-pink-500 to-orange-400'}>
-                            <p className="rounded-full w-fit text-xl sm:text-base">
-                                Register Now
-                            </p>
-                        </InteractiveHoverButton>
+                        <div className="flex md:flex-row flex-col gap-2.5 md:items-center items-start  justify-between">
+                            <InteractiveHoverButton className={' bg-gradient-to-tr from-pink-500 to-orange-300'}>
+                                <p className="rounded-full w-fit text-xl sm:text-base">
+                                    Register Now On Devfolio
+                                </p>
+                            </InteractiveHoverButton>
+
+                            {/* <Link href={'#'} className="text-lg text-white border-b border-b-zinc-100 flex flex-row gap-2 items-center justify-between">
+                               <FaWhatsapp/> Join Whatsapp Group
+                            </Link> */}
+                        </div>
                     </BoxReveal>
                 </div>
 

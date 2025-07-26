@@ -1,5 +1,6 @@
 import { Github, Twitter, Instagram, Linkedin, Mail, MapPin, Calendar } from "lucide-react"
 import Link from "next/link"
+import { FaDiscord, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
 
 export default function Footer() {
     return (
@@ -48,7 +49,7 @@ export default function Footer() {
             { name: "Sponsors", href: "#sponsors" },
             { name: "Mentors", href: "#mentors" },
             { name: "FAQ", href: "#faq" },
-            { name: "Rules", href: "/rules" },
+            { name: "Guidelines", href: "/guidelines" },
         ].map((link) => (
             <li key={link.name}>
                 <Link
@@ -80,10 +81,10 @@ export default function Footer() {
                         {/* Social Links */}
                         <div className="flex space-x-4">
                             {[
-                                { icon: Twitter, href: "#twitter", label: "Twitter" },
-                                { icon: Github, href: "#github", label: "GitHub" },
-                                { icon: Instagram, href: "#instagram", label: "Instagram" },
-                                { icon: Linkedin, href: "#linkedin", label: "LinkedIn" },
+                                { icon: FaGithub, href: "#github", label: "GitHub" },
+                                { icon: FaInstagram, href: "#instagram", label: "Instagram" },
+                                { icon: FaLinkedin, href: "#linkedin", label: "LinkedIn" },
+                                { icon: FaDiscord, href: "#discord", label: "Discord" },
                             ].map((social) => (
                                 <Link
                                     key={social.label}

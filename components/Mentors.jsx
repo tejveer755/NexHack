@@ -46,7 +46,7 @@ function Mentors() {
   ];
 
   return (
-    <section className="py-20 px-4 md:px-8 relative lg:px-10 " id='mentors'>
+    <section className="py-20 px-4 md:px-8 relative lg:px-10 " id='judges'>
       <motion.h2
         initial={{ backgroundPosition: '0% 50%' }}
         animate={{ backgroundPosition: '100% 50%' }}
@@ -56,7 +56,7 @@ function Mentors() {
         bg-gradient-to-r from-orange-400 via-pink-300 to-cyan-400
         bg-[length:300%_300%] text-center w-fit mx-auto border-b border-zinc-50 pb-3 z-50"
       >
-        Meet Our Mentors
+        Meet Our Mentors & Judges
       </motion.h2>
       <FocusCards cards={cards} />
     </section>

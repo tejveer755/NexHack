@@ -31,9 +31,9 @@ const Navbar = () => {
     "About",
     "Schedule",
     "Prizes",
-    "Mentors",
+    "Judges",
     "Sponsors",
-    "Rules",
+    "Guidelines",
     "FAQ",
   ];
 
@@ -43,13 +43,22 @@ const Navbar = () => {
         {/* Desktop Nav */}
         {!isMobile && (
           <>
-            <div className="w-24 h-auto z-10 text-center md:text-left">
+            {/* <GlassSurface  width={100}
+                height={70}
+                blur={20}
+                displace={5}
+                brightness={80}
+                opacity={0.8}
+                className="w-fit" > */}
+
+            <div className="w-24 h-auto z-10 text-center ">
               <img
                 src="/nexverseiitmlogo.png"
                 alt="nexverse-iitm logo"
                 className="w-full h-auto object-contain"
               />
             </div>
+            {/* </GlassSurface> */}
 
             <div className="flex justify-center lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2">
               <GlassSurface
@@ -63,8 +72,8 @@ const Navbar = () => {
               >
                 <ul className="flex items-center space-x-6 px-4 py-2 text-base">
                   {menuItems.map((item) => {
-                    const isRulesPage = item.toLowerCase() === "rules";
-                    const href = isRulesPage ? "/rules" : `/#${item.toLowerCase()}`;
+                    const isGuidlinesPage = item.toLowerCase() === "guidelines";
+                    const href = isGuidlinesPage ? "/guidelines" : `/#${item.toLowerCase()}`;
 
                     return (
                       <li key={item} className="cursor-pointer" onClick={() => setMenuOpen(false)}>
@@ -82,8 +91,10 @@ const Navbar = () => {
             {/* Register Button for Desktop */}
             <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
               <Link href="#">
-                <InteractiveHoverButton>
-                  Registers open!!
+                <InteractiveHoverButton >
+                  <p className="rounded-full w-fit h-full  text-xl sm:text-base">
+                    Registers open!!
+                  </p>
                 </InteractiveHoverButton>
               </Link>
             </div>
@@ -116,8 +127,8 @@ const Navbar = () => {
                     >
                       <ul className="flex flex-col items-center gap-6 px-4 py-3 text-base">
                         {menuItems.map((item) => {
-                          const isRulesPage = item.toLowerCase() === "rules";
-                          const href = isRulesPage ? "/rules" : `/#${item.toLowerCase()}`;
+                          const isGuidlinesPage = item.toLowerCase() === "rules";
+                          const href = isGuidlinesPage ? "/rules" : `/#${item.toLowerCase()}`;
 
                           return (
                             <li key={item} className="cursor-pointer" onClick={() => setMenuOpen(false)}>

@@ -30,7 +30,7 @@ export function HackathonTimeline() {
         The virtual battle begins! Round 1 will be conducted entirely online via Google Meet, featuring a full day of development followed by evaluation. Top-performing teams will be shortlisted for the offline grand finale.
       </p>
       <ul className="list-disc space-y-1.5 sm:space-y-2 pl-3 sm:pl-4">
-        <li><span className="font-semibold">September 14, 10:00 AM:</span> Kick-off & Problem Statement Release</li>
+        {/* <li><span className="font-semibold">September 14, 10:00 AM:</span> Kick-off & Problem Statement Release</li> */}
         <li><span className="font-semibold">10:00 AM – 4:00 PM:</span> Development Phase</li>
         <li><span className="font-semibold">4:00 PM – 6:00 PM:</span> Submission Window</li>
         <li><span className="font-semibold">6:00 PM – 10:00 PM:</span> Judging & Evaluation</li>
@@ -51,7 +51,7 @@ export function HackathonTimeline() {
       <p className="mb-3 sm:mb-4">Welcome to the final arena at IIITM, Janakpuri. Let the battle of brains begin!</p>
       <ul className="list-disc space-y-1.5 sm:space-y-2 pl-3 sm:pl-4">
         <li><span className="font-semibold">9:00 AM – 10:00 AM:</span> Team Check-in & Welcome</li>
-        <li><span className="font-semibold">10:00 AM – 11:00 AM:</span> Opening Ceremony & Problem Statement Release</li>
+        <li><span className="font-semibold">10:00 AM – 11:00 AM:</span> Opening Ceremony </li>
         <li><span className="font-semibold">11:00 AM – 8:00 PM:</span> Coding Phase</li>
         <li><span className="font-semibold">8:00 PM – 9:00 PM:</span> Dinner</li>
         <li><span className="font-semibold">9:00 PM onwards:</span> Overnight Hacking Continues</li>

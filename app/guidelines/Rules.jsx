@@ -3,7 +3,7 @@
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { useState ,useEffect} from "react"
-import Loading from '../rules/loading'
+import Loading from '../../components/loading'
 
 export default function Rules() {
   const [mounted, setMounted] = useState(false)
@@ -26,8 +26,8 @@ export default function Rules() {
       <div className="bg-zinc-950 backdrop-blur-lg text-white py-12">
         <div className="container mx-auto px-6 text-center">
           <Badge className="mb-4 bg-gray-700 text-white">AI for Real World Impact</Badge>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Nexhack 1.0</h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">Official Rules & Regulations</p>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-tr from-sky-400 via-fuchsia-300 to-orange-400 bg-clip-text text-transparent">NEXHACK 1.0</h1>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">Official Guidelines</p>
           <p className="text-gray-400 mt-2">24-Hour Innovation Challenge</p>
         </div>
       </div>

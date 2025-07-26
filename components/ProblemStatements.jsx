@@ -59,7 +59,7 @@ function ProblemStatements() {
     return (
         <section className="w-full min-h-screen bg-gradient-to-br from-transparent  to-transparent text-white py-16 px-4 md:px-12 lg:px-24">
             <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-purple-400 via-blue-400 to-teal-300 border-b border-zinc-600 bg-clip-text text-transparent pb-3">
+                <h2 className="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-purple-400 via-blue-400 to-teal-300  bg-clip-text text-transparent pb-3">
                     Problem Statements
                 </h2>
                 <p className="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">

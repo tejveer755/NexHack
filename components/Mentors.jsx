@@ -8,37 +8,37 @@ import { MagicCard } from './ui/MagicCard';
 function Mentors() {
   const cards = [
     {
-      title: 'Forest Adventure',
+      title: 'Mentor ',
       src: '/chirag.png',
       designation: 'lorem3 heiew wsb',
       linkedin: '#'
     },
     {
-      title: 'Forest Adventure2',
+      title: 'Mentor 2',
       src: '/chirag.png',
       designation: 'lorem3 heiew wsb',
       linkedin: '#'
     },
     {
-      title: 'Forest Adventure3',
+      title: 'Mentor 3',
       src: '/chirag.png',
       designation: 'lorem3 heiew wsb',
       linkedin: '#'
     },
     {
-      title: 'Forest Adventure4',
+      title: 'Mentor 4',
       src: '/chirag.png',
       designation: 'lorem3 heiew wsb',
       linkedin: '#'
     },
     {
-      title: 'Forest Adventure5',
+      title: 'Mentor 5',
       src: '/chirag.png',
       designation: 'lorem3 heiew wsb',
       linkedin: '#'
     },
     {
-      title: 'Forest Adventure6',
+      title: 'Mentor 6',
       src: '/chirag.png',
       designation: 'lorem3 heiew wsb',
       linkedin: '#'

@@ -3,17 +3,18 @@ import { Particles } from "./ui/Particles"
 
 export default function SponsorSection() {
   const sponsors = [
-    { name: "TechCorp", logo: "/nexverseiitmlogo.png" },
-    { name: "InnovateLab", logo: "/nexverseiitmlogo.png" },
-    { name: "CodeBase", logo: "/nexverseiitmlogo.png" },
-    { name: "DevTools", logo: "/nexverseiitmlogo.png" },
-    { name: "CloudSync", logo: "/nexverseiitmlogo.png" },
-    { name: "DataFlow", logo: "/nexverseiitmlogo.png" },
-    { name: "AICore", logo: "/nexverseiitmlogo.png" },
-    { name: "WebStack", logo: "/nexverseiitmlogo.png" },
+    { name: "TechCorp", logo: "/coming_soon.png" },
+    { name: "InnovateLab", logo: "/coming_soon.png" },
+    { name: "CodeBase", logo: "/coming_soon.png" },
+    { name: "DevTools", logo: "/coming_soon.png" },
+    { name: "CloudSync", logo: "/coming_soon.png" },
+    { name: "DataFlow", logo: "/coming_soon.png" },
+    { name: "AICore", logo: "/coming_soon.png" },
+    { name: "WebStack", logo: "/coming_soon.png" },
   ]
 
   return (
+    
     <section className="relative  py-24 overflow-hidden" id="sponsors">
       {/* Gradient masks */}
       <div className="absolute inset-0 z[2]">
@@ -42,16 +43,17 @@ export default function SponsorSection() {
         {/* Sponsors grid */}
         <div className="relative">
           {/* Background glow effect */}
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 blur-3xl" />
-
-          <div className="relative grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 blur-3xl " />
+   <div className="relative z-10 flex items-center justify-center">
+    <img src="/coming_soon.png" alt="Coming Soon" className="w-auto max-w-xs md:max-w-md" />
+  </div>
+          {/* <div className="relative grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             {sponsors.map((sponsor, index) => (
               <div
                 key={sponsor.name}
                 className="group relative flex items-center justify-center p-6 rounded-2xl border border-gray-800/50 bg-gray-900/20 backdrop-blur-sm hover:border-gray-700/50 transition-all duration-300 hover:scale-105"
               >
-                {/* Hover glow effect */}
-                {/* <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500/0 via-purple-500/0 to-pink-500/0 group-hover:from-blue-500/10 group-hover:via-purple-500/10 group-hover:to-pink-500/10 transition-all duration-300" /> */}
+                
 
                 <Image
                   src={sponsor.logo || "/placeholder.svg"}
@@ -62,7 +64,7 @@ export default function SponsorSection() {
                 />
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* Call to action */}

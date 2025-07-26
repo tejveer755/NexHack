@@ -9,11 +9,13 @@ import {
   DropdownMenu,
 } from "./ui/dropdown-menu";
 import Link from "next/link";
-import {InteractiveHoverButton} from "@/components/magicui/InteractiveHoverButton"; // Make sure this path is correct
+import { InteractiveHoverButton } from "@/components/magicui/InteractiveHoverButton"; // Make sure this path is correct
 
 const Navbar = () => {
   const [mounted, setMounted] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const breakpoint = 850;
 
   useEffect(() => {
@@ -31,7 +33,7 @@ const Navbar = () => {
     "Prizes",
     "Mentors",
     "Sponsors",
-    "Team",
+    "Rules",
     "FAQ",
   ];
 
@@ -51,7 +53,7 @@ const Navbar = () => {
 
             <div className="flex justify-center lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2">
               <GlassSurface
-                width={600}
+                width={620}
                 height={50}
                 blur={20}
                 displace={5}
@@ -60,13 +62,19 @@ const Navbar = () => {
                 className="w-fit"
               >
                 <ul className="flex items-center space-x-6 px-4 py-2 text-base">
-                  {menuItems.map((item) => (
-                    <li key={item} className="cursor-pointer">
-                      <Link href={`/#${item.toLowerCase()}`}>
-                        {item}
-                      </Link>
-                    </li>
-                  ))}
+                  {menuItems.map((item) => {
+                    const isRulesPage = item.toLowerCase() === "rules";
+                    const href = isRulesPage ? "/rules" : `/#${item.toLowerCase()}`;
+
+                    return (
+                      <li key={item} className="cursor-pointer" onClick={() => setMenuOpen(false)}>
+                        <Link href={href}>
+                          {item}
+                        </Link>
+                      </li>
+                    );
+                  })}
+
                 </ul>
               </GlassSurface>
             </div>
@@ -86,45 +94,46 @@ const Navbar = () => {
         {isMobile && (
           <div className="flex flex-row items-center justify-between w-full -mt-4">
             <div className="mt-2 flex w-full flex-row items-center justify-between rounded-2xl border border-white/20 bg-white/5 p-2 backdrop-blur-md ">
-            <div className="w-15 h-auto z-10 text-center">
-              <img
-                src="/nexverseiitmlogo.png"
-                alt="nexverse-iitm logo"
-                className="w-full h-auto object-contain"
-              />
-            </div>
+              <div className="w-15 h-auto z-10 text-center">
+                <img
+                  src="/nexverseiitmlogo.png"
+                  alt="nexverse-iitm logo"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
 
-            <div className="flex items-center gap-2">
-              {/* Register Button for Mobile */}
+              <div className="flex items-center gap-2">
+                {/* Register Button for Mobile */}
 
-              <DropdownMenu>
-                <DropdownMenuTrigger>
-                  <Menu className="text-white text-lg" />
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="bg-transparent border-0 mr-8 mt-6">
-                  <GlassSurface
-                    width={300}
-                    height={menuItems.length * 50}
-                    blur={8}
-                    displace={3}
-                    brightness={60}
-                    opacity={0.9}
-                    className="w-fit"
-                  >
-                    <ul className="flex flex-col items-center gap-6 px-4 py-3 text-base">
-                      {menuItems.map((item) => (
-                        <li key={item} className="cursor-pointer">
-                          <Link href={`/#${item.toLowerCase()}`}>
-                            {item}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </GlassSurface>
-                </DropdownMenuContent>
-              </DropdownMenu>
+                <DropdownMenu open={menuOpen} onOpenChange={setMenuOpen} modal={false}>
+
+                  <DropdownMenuTrigger >
+                    <Menu className="text-white text-lg" />
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent className="bg-transparent border-0 mr-8 mt-6">
+                    <div
+                      className="border border-white/20 bg-white/5 p-2 backdrop-blur-lg w-72 rounded-2xl"
+                    >
+                      <ul className="flex flex-col items-center gap-6 px-4 py-3 text-base">
+                        {menuItems.map((item) => {
+                          const isRulesPage = item.toLowerCase() === "rules";
+                          const href = isRulesPage ? "/rules" : `/#${item.toLowerCase()}`;
+
+                          return (
+                            <li key={item} className="cursor-pointer" onClick={() => setMenuOpen(false)}>
+                              <Link href={href}>
+                                {item}
+                              </Link>
+                            </li>
+                          );
+                        })}
+
+                      </ul>
+                    </div>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              </div>
             </div>
-          </div>
           </div>
         )}
       </div>

@@ -48,6 +48,7 @@ export default function Footer() {
             { name: "Sponsors", href: "#sponsors" },
             { name: "Mentors", href: "#mentors" },
             { name: "FAQ", href: "#faq" },
+            { name: "Rules", href: "/rules" },
         ].map((link) => (
             <li key={link.name}>
                 <Link

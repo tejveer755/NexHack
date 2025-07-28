@@ -1,6 +1,8 @@
+'use client'
 import React from 'react'
 import { ParallaxScroll } from './ui/ParallaxScroll '
 import { InfiniteMovingCards } from './ui/infinite-moving-cards'
+import { useRouter } from 'next/navigation'
 
 const problemStatements = [
     {
@@ -56,6 +58,7 @@ const problemStatements = [
 ]
 
 function ProblemStatements() {
+    const router = useRouter();
     return (
         <section className="w-full min-h-screen bg-gradient-to-br from-transparent  to-transparent text-white py-16 px-4 md:px-12 lg:px-24">
             <div className="text-center mb-16">
@@ -103,6 +106,8 @@ function ProblemStatements() {
     </button>
   </div>
 </div>
+
+
 
 
         </section>

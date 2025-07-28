@@ -78,7 +78,7 @@ export default function SponsorSection() {
         </div>
       </div>
 
-    <div className="absolute inset-0 h-1/2 z-[1] ">
+    <div className="absolute inset-0 h-1/2  ">
         <Particles ease={300} staticity={50} vx={-0.8} vy={.3}/>
     </div>
     </section>

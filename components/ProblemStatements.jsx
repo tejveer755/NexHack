@@ -5,57 +5,81 @@ import { InfiniteMovingCards } from './ui/infinite-moving-cards'
 import { useRouter } from 'next/navigation'
 
 const problemStatements = [
-    {
-        "id": 1,
-        "title": "Healthcare Assistant",
-        "description": "Build an AI solution that helps patients monitor their health, schedule appointments, or get preliminary diagnostics through chatbots or wearable data analysis."
-    },
-    {
-        "id": 2,
-        "title": "Smart Agriculture Advisor",
-        "description": "Create an AI system that analyzes soil, weather, and crop data to provide farmers with actionable insights to increase yield and reduce resource use."
-    },
-    {
-        "id": 3,
-        "title": "Personal Finance Manager",
-        "description": "Develop an AI tool that helps users track expenses, budget smartly, and get investment advice tailored to their financial goals."
-    },
-    {
-        "id": 4,
-        "title": "Disaster Management",
-        "description": "Design an AI platform that predicts natural disasters like floods or earthquakes early and suggests evacuation plans or resource allocation."
-    },
-    {
-        "id": 5,
-        "title": "Accessibility Tools",
-        "description": "Build AI applications that assist people with disabilities — e.g., speech-to-text for the hearing impaired or navigation aids for visually impaired users."
-    },
-    {
-        "id": 6,
-        "title": "Waste Management System",
-        "description": "Create a solution using AI to optimize waste collection routes, sort recyclables automatically, or reduce landfill waste."
-    },
-    {
-        "id": 7,
-        "title": "Mental Health Support",
-        "description": "Develop an AI companion that offers mental wellness support through mood tracking, mindfulness exercises, or connecting users to professionals when needed."
-    },
-    {
-        "id": 8,
-        "title": "Smart Transportation",
-        "description": "Build an AI system that optimizes public transport routes, predicts traffic jams, or enhances ride-sharing efficiency."
-    },
-    {
-        "id": 9,
-        "title": "Energy Efficiency",
-        "description": "Design AI models to monitor and reduce household or industrial energy consumption by smartly managing appliances and equipment."
-    },
-    {
-        "id": 10,
-        "title": "Education",
-        "description": "Create personalized learning platforms using AI that adapt content and pace based on individual student performance and learning style."
-    }
-]
+  {
+    id: 1,
+    title: "AI-Powered Healthcare Assistant",
+    description:
+      "Build an AI solution that helps patients monitor their health, schedule appointments, or get preliminary diagnostics through chatbots or wearable data analysis."
+  },
+  {
+    id: 2,
+    title: "Smart Agriculture Advisor",
+    description:
+      "Create an AI system that analyzes soil, weather, and crop data to provide farmers with actionable insights to increase yield and reduce resource use."
+  },
+  {
+    id: 3,
+    title: "AI-Based Personal Finance Manager",
+    description:
+      "Develop an AI tool that helps users track expenses, budget smartly, and get investment advice tailored to their financial goals."
+  },
+  {
+    id: 4,
+    title: "AI for Disaster Management",
+    description:
+      "Design an AI platform that predicts natural disasters like floods or earthquakes early and suggests evacuation plans or resource allocation."
+  },
+  {
+    id: 5,
+    title: "AI-Powered Accessibility Tools",
+    description:
+      "Build AI applications that assist people with disabilities — e.g., speech-to-text for the hearing impaired or navigation aids for visually impaired users."
+  },
+  {
+    id: 6,
+    title: "AI-Driven Waste Management System",
+    description:
+      "Create a solution using AI to optimize waste collection routes, sort recyclables automatically, or reduce landfill waste."
+  },
+  {
+    id: 7,
+    title: "AI for Mental Health Support",
+    description:
+      "Develop an AI companion that offers mental wellness support through mood tracking, mindfulness exercises, or connecting users to professionals when needed."
+  },
+  {
+    id: 8,
+    title: "AI-Enabled Smart Transportation",
+    description:
+      "Build an AI system that optimizes public transport routes, predicts traffic jams, or enhances ride-sharing efficiency."
+  },
+  {
+    id: 9,
+    title: "AI for Energy Efficiency",
+    description:
+      "Design AI models to monitor and reduce household or industrial energy consumption by smartly managing appliances and equipment."
+  },
+  {
+    id: 10,
+    title: "AI in Education",
+    description:
+      "Create personalized learning platforms using AI that adapt content and pace based on individual student performance and learning style."
+  },
+  {
+    id: 11,
+    title: "Open Innovation",
+    description:
+      "Build any AI-powered solution that solves a real-world problem or improves everyday life. Think beyond the boundaries, explore new domains, and innovate freely!"
+  }
+];
+
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/nexhack-problem-statements.pdf'; // file in /public/sample.pdf
+    link.download = 'nexhack-problem-statements.pdf';
+    link.click();
+  };
 
 function ProblemStatements() {
     const router = useRouter();
@@ -99,7 +123,7 @@ function ProblemStatements() {
 
   {/* Download Button */}
   <div className="relative group w-fit md:w-auto">
-    <button className="cursor-pointer w-fit  md:w-auto">
+    <button onClick={handleDownload} className="cursor-pointer w-fit  md:w-auto">
       <div className="relative px-4 py-3 text-sm md:text-base text-center text-white font-medium shadow-md border-b border-zinc-100   transition-all duration-300">
         Download Problem Statements
       </div>

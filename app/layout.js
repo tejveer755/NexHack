@@ -63,7 +63,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} w-screen overflow-x-hidden ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} w-screen overflow-x-hidden bg-zinc-950 ${geistMono.variable} antialiased`}
       >
         <ThemeProviderWrapper>
         {children}

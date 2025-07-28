@@ -79,17 +79,31 @@ function ProblemStatements() {
                     speed="slow"
                 />
             </div>
-            <div className="mt-12 flex justify-center">
-  <div className="relative group">
+          <div className="mt-12 flex flex-col md:flex-row gap-6 md:gap-9 items-center justify-center px-4">
+  {/* Open Innovation Capsule */}
+  <div className="relative group w-full md:w-auto">
     {/* Gradient Border */}
     <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 blur-sm opacity-75 group-hover:opacity-100 transition duration-300"></div>
 
     {/* Content Capsule */}
-    <div className="relative rounded-full px-5 py-2 text-sm md:text-base text-center bg-zinc-900 text-white font-medium shadow-md border border-transparent group-hover:border-zinc-800 transition-all duration-300">
-      Open Innovation: Develop an AI solution beyond the listed challenges <br /> anything impactful, creative, and rooted in real-world needs.
+    <div className="relative rounded-full px-6 py-3 text-sm md:text-base text-center bg-zinc-900 text-white font-medium shadow-md border border-transparent group-hover:border-zinc-800 transition-all duration-300">
+      <span className="block">
+        Open Innovation: Develop an AI solution beyond the listed challenges — <br className="hidden sm:block" />
+        anything impactful, creative, and rooted in real-world needs.
+      </span>
     </div>
   </div>
+
+  {/* Download Button */}
+  <div className="relative group w-fit md:w-auto">
+    <button className="cursor-pointer w-fit  md:w-auto">
+      <div className="relative px-4 py-3 text-sm md:text-base text-center text-white font-medium shadow-md border-b border-zinc-100   transition-all duration-300">
+        Download Problem Statements
+      </div>
+    </button>
+  </div>
 </div>
+
 
         </section>
     )

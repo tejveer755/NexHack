@@ -9,40 +9,10 @@ function Mentors() {
   const cards = [
     {
       title: 'Mentor ',
-      src: '/chirag.png',
+      src: '/coming_soon.png',
       designation: 'lorem3 heiew wsb',
       linkedin: '#'
-    },
-    {
-      title: 'Mentor 2',
-      src: '/chirag.png',
-      designation: 'lorem3 heiew wsb',
-      linkedin: '#'
-    },
-    {
-      title: 'Mentor 3',
-      src: '/chirag.png',
-      designation: 'lorem3 heiew wsb',
-      linkedin: '#'
-    },
-    {
-      title: 'Mentor 4',
-      src: '/chirag.png',
-      designation: 'lorem3 heiew wsb',
-      linkedin: '#'
-    },
-    {
-      title: 'Mentor 5',
-      src: '/chirag.png',
-      designation: 'lorem3 heiew wsb',
-      linkedin: '#'
-    },
-    {
-      title: 'Mentor 6',
-      src: '/chirag.png',
-      designation: 'lorem3 heiew wsb',
-      linkedin: '#'
-    },
+    }
   ];
 
   return (
@@ -58,7 +28,15 @@ function Mentors() {
       >
         Meet Our Mentors & Judges
       </motion.h2>
-      <FocusCards cards={cards} />
+      {/* <FocusCards cards={cards} /> */}
+      <div className="relative">
+          {/* Background glow effect */}
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 blur-3xl " />
+   <div className="relative z-10 flex items-center justify-center">
+    <img src="/coming_soon.png" alt="Coming Soon" className="w-auto max-w-xs md:max-w-md" />
+  </div>
+        
+        </div>
     </section>
   );
 }

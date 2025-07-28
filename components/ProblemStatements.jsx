@@ -1,6 +1,8 @@
+'use client'
 import React from 'react'
 import { ParallaxScroll } from './ui/ParallaxScroll '
 import { InfiniteMovingCards } from './ui/infinite-moving-cards'
+import { useRouter } from 'next/navigation'
 
 const problemStatements = [
     {
@@ -56,6 +58,7 @@ const problemStatements = [
 ]
 
 function ProblemStatements() {
+    const router = useRouter();
     return (
         <section className="w-full min-h-screen bg-gradient-to-br from-transparent  to-transparent text-white py-16 px-4 md:px-12 lg:px-24">
             <div className="text-center mb-16">
@@ -89,7 +92,17 @@ function ProblemStatements() {
       Open Innovation: Develop an AI solution beyond the listed challenges <br /> anything impactful, creative, and rooted in real-world needs.
     </div>
   </div>
+  
 </div>
+<div className="p-10 flex items-center justify-center">
+  <button className="p-[3px] relative" onClick={() => router.push('/guidelines')}>
+    <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+    <div className="px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">
+      Check Rules and Regulations
+    </div>
+  </button>
+</div>
+
 
         </section>
     )

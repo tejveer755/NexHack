@@ -10,13 +10,14 @@ import {
 } from "./ui/dropdown-menu";
 import Link from "next/link";
 import { InteractiveHoverButton } from "@/components/magicui/InteractiveHoverButton"; // Make sure this path is correct
+import { FaHandPointUp } from "react-icons/fa";
 
 const Navbar = () => {
   const [mounted, setMounted] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const breakpoint = 850;
+  const breakpoint = 1050;
 
   useEffect(() => {
     setMounted(true);
@@ -90,10 +91,11 @@ const Navbar = () => {
 
             {/* Register Button for Desktop */}
             <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
+                   {/* <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 rotate-90 text-2xl animate-bounce"><FaHandPointUp/></div> */}
               <Link href="#">
                 <InteractiveHoverButton >
                   <p className="rounded-full w-fit h-full  text-xl sm:text-base">
-                    Registers open!!
+                    Registrations open!!
                   </p>
                 </InteractiveHoverButton>
               </Link>

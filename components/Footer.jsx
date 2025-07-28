@@ -5,7 +5,7 @@ import { FaDiscord, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
 export default function Footer() {
     return (
         <footer className="relative border-t border-gray-800   mt-48 text-white overflow-hidden">
-              <div className="absolute inset-0  top-[0%] bg-gradient-to-t from-[#9b28732a]  via-[#3ca8c454] to-[#a332e054] [mask-image:radial-gradient(670px_circle_at_50%_0%,white,transparent)]"></div>
+            <div className="absolute inset-0  top-[0%] bg-gradient-to-t from-[#9b28732a]  via-[#3ca8c454] to-[#a332e054] [mask-image:radial-gradient(670px_circle_at_50%_0%,white,transparent)]"></div>
 
             {/* Main footer content */}
             <div className="relative z-10 container mx-auto px-4 py-16">
@@ -13,9 +13,11 @@ export default function Footer() {
                     {/* Brand Section */}
                     <div className="lg:col-span-1 px-7">
                         <div className="mb-6">
-                            <h3 className="text-2xl font-bold bg-gradient-to-tr from-sky-400 via-fuchsia-300 to-orange-400 bg-clip-text text-transparent">
-                                Nexhack 1.0
-                            </h3>
+                            <img
+                                src="/nexhacklogo.png"
+                                alt="NexHack logo"
+                                className="w-[200px] md:w-[230px] max-w-full  h-auto "
+                            />
                             <p className="text-gray-400 mt-2 text-sm leading-relaxed">
                                 Join the ultimate 24+ hour coding challenge. Build, innovate, and compete with the best developers
                                 worldwide.
@@ -37,35 +39,35 @@ export default function Footer() {
                     </div>
 
                     {/* Quick Links */}
-                    <div className="lg:pl-8">
-    <h4 className="text-lg font-semibold mb-6 text-white">Quick Links</h4>
-    <ul className="space-y-3 flex flex-col gap-x-1 flex-wrap max-h-[200px]">
-        {[
-            { name: "Register Now", href: "#" },
-            { name: "About", href: "#about" },
-            { name: "Our Team", href: "#team" },
-            { name: "Schedule", href: "#schedule" },
-            { name: "Prizes", href: "#prizes" },
-            { name: "Sponsors", href: "#sponsors" },
-            { name: "Mentors", href: "#mentors" },
-            { name: "FAQ", href: "#faq" },
-            { name: "Guidelines", href: "/guidelines" },
-        ].map((link) => (
-            <li key={link.name}>
-                <Link
-                    href={link.href}
-                    className="text-gray-400 hover:text-yellow-400 transition-colors duration-200 text-sm"
-                >
-                    {link.name}
-                </Link>
-            </li>
-        ))}
-    </ul>
-</div>
+                    <div className="lg:pl-8 px-7">
+                        <h4 className="text-lg font-semibold mb-6 text-white">Quick Links</h4>
+                        <ul className="space-y-3 flex flex-col gap-x-1 flex-wrap max-h-[200px]">
+                            {[
+                                { name: "Register Now", href: "#" },
+                                { name: "About", href: "#about" },
+                                { name: "Our Team", href: "#team" },
+                                { name: "Schedule", href: "#schedule" },
+                                { name: "Prizes", href: "#prizes" },
+                                { name: "Sponsors", href: "#sponsors" },
+                                { name: "Mentors", href: "#mentors" },
+                                { name: "FAQ", href: "#faq" },
+                                { name: "Guidelines", href: "/guidelines" },
+                            ].map((link) => (
+                                <li key={link.name}>
+                                    <Link
+                                        href={link.href}
+                                        className="text-gray-400 hover:text-yellow-400 transition-colors duration-200 text-sm"
+                                    >
+                                        {link.name}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
 
 
                     {/* Contact & Social */}
-                    <div className=" pl-16">
+                    <div className="px-7 lg:pl-16 ">
                         <h4 className="text-lg font-semibold mb-6 text-white">Connect</h4>
 
                         {/* Contact Info */}

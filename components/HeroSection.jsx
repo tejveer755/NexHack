@@ -9,6 +9,7 @@ import {
     FaAws,
     FaDiscord,
     FaWhatsapp,
+    FaJava,
 } from "react-icons/fa";
 import {
     SiMongodb,
@@ -34,10 +35,16 @@ function HeroSection() {
                 {/* Left Content */}
                 <div className="w-full lg:w-1/2 lg:pl-7 flex flex-col justify-start gap-3">
                     <BoxReveal boxColor={"#d900ff"} duration={0.5}>
-                        <h2 className={` bg-gradient-to-tr from-sky-400 via-fuchsia-300 to-orange-400 bg-clip-text text-transparent font-extrabold   border-b-4 mb-3 border-zinc-400 pb-12 rounded-b-[40%]         text-[2.6rem] md:text-7xl lg:text-[90px] text-start text-nowrap ${orbitron.className}`}>
+                        <img
+                            src="/nexhacklogo.png"
+                            alt="NexHack logo"
+                            className="w-[400px] sm:w-[500px] md:w-[590px] lg:w-[750px] xl:w-[600px] max-w-full h-auto mx-auto"
+                        />
+                         {/* <h2 className={` bg-gradient-to-tr from-sky-400 via-fuchsia-300 to-orange-400 bg-clip-text text-transparent font-extrabold   border-b-4 mb-3 border-zinc-400 pb-12 rounded-b-[40%]         text-[2.6rem] md:text-7xl lg:text-[90px] text-start text-nowrap ${orbitron.className}`}>
                             NEXHACK 1.0
-                        </h2>
+                        </h2> */}
                     </BoxReveal>
+
 
                     <BoxReveal boxColor={"#d900ff"} duration={0.67}>
                         <h2 className="text-white font-semibold text-md md:text-xl">
@@ -45,13 +52,13 @@ function HeroSection() {
                             <br />
                             <span className="font-bold">Nexhack</span> is a 24-hour hackathon by{" "}
                             <span className="text-amber-400 font-semibold">Nexverse-IITM</span>,
-                            where students from all over come together to create something amazing.
+                            where students from all over India come together to create something amazing.
                         </h2>
                     </BoxReveal>
 
                     <BoxReveal boxColor={"#d900ff"} duration={0.85}>
                         <h2 className="text-white font-semibold text-md leading-relaxed">
-                            🗓 Registrations Starts
+                            🗓 Registration Starts
                             <span className="font-bold"> 1st Aug</span>
                             <br />
                             💻 Online Round: <span className="font-bold">20 Sep</span>
@@ -89,7 +96,7 @@ function HeroSection() {
                         <FaReact className="text-cyan-400 text-4xl sm:text-5xl" />
                         <FaNodeJs className="text-green-600 text-4xl sm:text-5xl" />
                         <SiMongodb className="text-green-500 text-4xl sm:text-5xl" />
-                        <FaHtml5 className="text-orange-500 text-4xl sm:text-5xl" />
+                        <FaJava className="text-orange-400 text-4xl sm:text-5xl" />
                         <FaDocker className="text-blue-500 text-4xl sm:text-5xl" />
                         <FaJs className="text-yellow-500 text-4xl sm:text-5xl" />
                     </OrbitingCircles>

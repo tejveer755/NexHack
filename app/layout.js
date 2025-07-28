@@ -34,7 +34,7 @@ export const metadata = {
   openGraph: {
     title: "Nexhack 2025 | 24hr Hackathon by Nexverse IITM",
     description:
-      "A 24-hour nationwide hackathon hosted by Nexverse, IIT Madras. Code, build, and win exciting prizes!",
+      "A 24-hour nationwide hackathon hosted by Nexverse, IITM. Code, build, and win exciting prizes!",
     // url: "https://nexhack.com",
     siteName: "Nexhack",
     images: [

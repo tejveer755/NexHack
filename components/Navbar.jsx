@@ -127,8 +127,8 @@ const Navbar = () => {
                     >
                       <ul className="flex flex-col items-center gap-6 px-4 py-3 text-base">
                         {menuItems.map((item) => {
-                          const isGuidlinesPage = item.toLowerCase() === "rules";
-                          const href = isGuidlinesPage ? "/rules" : `/#${item.toLowerCase()}`;
+                           const isGuidlinesPage = item.toLowerCase() === "guidelines";
+                    const href = isGuidlinesPage ? "/guidelines" : `/#${item.toLowerCase()}`;
 
                           return (
                             <li key={item} className="cursor-pointer" onClick={() => setMenuOpen(false)}>

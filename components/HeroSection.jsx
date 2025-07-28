@@ -54,7 +54,7 @@ function HeroSection() {
                             🗓 Registrations Starts
                             <span className="font-bold"> 1st Aug</span>
                             <br />
-                            💻 Online Round: <span className="font-bold">14 Sep</span>
+                            💻 Online Round: <span className="font-bold">20 Sep</span>
                             <br />
                             📍 Hack @ IITM: <span className="font-bold">26–27 Sep</span>
                         </h2>

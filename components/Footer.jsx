@@ -75,7 +75,7 @@ export default function Footer() {
                             <div className="flex items-center text-sm text-gray-300 mb-2">
                                 <Mail className="w-4 h-4 mr-2 text-yellow-400" />
                                 <a href="mailto:hello@Nexhack2024.com" className="hover:text-yellow-400 transition-colors">
-                                    hello@Nexhack2024.com
+                                    nexverse.iitm@gmail.com
                                 </a>
                             </div>
                         </div>
@@ -83,9 +83,9 @@ export default function Footer() {
                         {/* Social Links */}
                         <div className="flex space-x-4">
                             {[
-                                { icon: FaGithub, href: "#github", label: "GitHub" },
-                                { icon: FaInstagram, href: "#instagram", label: "Instagram" },
-                                { icon: FaLinkedin, href: "#linkedin", label: "LinkedIn" },
+                                // { icon: FaGithub, href: "#github", label: "GitHub" },
+                                { icon: FaInstagram, href: "https://www.instagram.com/nexverse_iitm/", label: "Instagram" },
+                                { icon: FaLinkedin, href: "https://www.linkedin.com/in/geek-room-iitm/", label: "LinkedIn" },
                                 { icon: FaDiscord, href: "#discord", label: "Discord" },
                             ].map((social) => (
                                 <Link

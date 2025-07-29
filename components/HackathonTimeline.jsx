@@ -89,8 +89,6 @@ export function HackathonTimeline() {
 ]
 
 
-
-
   return (
     <div className="relative w-full overflow-clip px-4 py-12" id="schedule">
       

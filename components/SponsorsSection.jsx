@@ -67,15 +67,7 @@ export default function SponsorSection() {
           </div> */}
         </div>
 
-        {/* Call to action */}
-        <div className="text-center mt-16">
-          <div className="inline-flex items-center gap-4 px-8 py-4 rounded-full border border-gray-800/50 bg-gray-900/30 backdrop-blur-sm">
-            <span className="text-gray-300">Want to sponsor our hackathon?</span>
-            <button className="px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105">
-              Get in Touch
-            </button>
-          </div>
-        </div>
+       
       </div>
 
     <div className="absolute inset-0 h-1/2  ">

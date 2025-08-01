@@ -26,20 +26,23 @@ export const metadata = {
     "student hackathon",
     "IITM events",
     "innovation challenge",
-    "coding competition"
+    "coding competition",
+    "AI hackathon",
+    "GGSIPU",
+    'Institute of Information Technology & Management',
   ],
-  authors: [{ name: "Nexverse IITM", }],
+  authors: [{ name: "Nexverse-IITM", }],
   creator: "Nexverse Team",
   publisher: "Nexverse IITM",
   openGraph: {
     title: "Nexhack 2025 | 24hr Hackathon by Nexverse IITM",
     description:
       "A 24-hour nationwide hackathon hosted by Nexverse, IITM. Code, build, and win exciting prizes!",
-    // url: "https://nexhack.com",
-    siteName: "Nexhack",
+    url: "https://nexverse-iitm.com",
+    siteName: "Nexverse-iitm",
     images: [
       {
-        // url: "https://nexhack.com/og-image.png", // Replace with your actual OG image URL
+        url: "https://nexverse.com/nexhacklogo.png", // Replace with your actual OG image URL
         width: 1200,
         height: 630,
         alt: "Nexhack 2025 - Hackathon by Nexverse IITM"
@@ -48,14 +51,8 @@ export const metadata = {
     locale: "en_IN",
     type: "website"
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Nexhack 2025 | 24hr Hackathon by Nexverse IITM",
-    description:
-      "Participate in Nexhack, a 24-hour hackathon by Nexverse IITM. Build with the best minds. Win big.",
-    // images: ["https://nexhack.com/og-image.png"]
-  },
-  // metadataBase: new URL("https://nexhack.com")
+ 
+  metadataBase: new URL("https://nexverse-iitm.com")
 };
 
 

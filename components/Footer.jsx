@@ -43,7 +43,7 @@ export default function Footer() {
                         <h4 className="text-lg font-semibold mb-6 text-white">Quick Links</h4>
                         <ul className="space-y-3 flex flex-col gap-x-1 flex-wrap max-h-[200px]">
                             {[
-                                { name: "Register Now", href: "#" },
+                                { name: "Register Now", href: "https://nexhack.devfolio.co/overview" },
                                 { name: "About", href: "#about" },
                                 { name: "Our Team", href: "#team" },
                                 { name: "Schedule", href: "#schedule" },
@@ -56,6 +56,7 @@ export default function Footer() {
                                 <li key={link.name}>
                                     <Link
                                         href={link.href}
+                                        target={link.name === "Register Now" ? "_blank" : "_self"}
                                         className="text-gray-400 hover:text-yellow-400 transition-colors duration-200 text-sm"
                                     >
                                         {link.name}

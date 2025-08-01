@@ -92,7 +92,7 @@ const Navbar = () => {
             {/* Register Button for Desktop */}
             <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
                    {/* <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 rotate-90 text-2xl animate-bounce"><FaHandPointUp/></div> */}
-              <Link href="#">
+              <Link href="https://nexhack.devfolio.co/overview" target="_blank">
                 <InteractiveHoverButton >
                   <p className="rounded-full w-fit h-full  text-xl sm:text-base">
                     Registrations open!!

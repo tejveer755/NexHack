@@ -40,9 +40,6 @@ function HeroSection() {
                             alt="NexHack logo"
                             className="w-[400px] sm:w-[500px] md:w-[590px] lg:w-[750px] xl:w-[600px] max-w-full h-auto mx-auto"
                         />
-                         {/* <h2 className={` bg-gradient-to-tr from-sky-400 via-fuchsia-300 to-orange-400 bg-clip-text text-transparent font-extrabold   border-b-4 mb-3 border-zinc-400 pb-12 rounded-b-[40%]         text-[2.6rem] md:text-7xl lg:text-[90px] text-start text-nowrap ${orbitron.className}`}>
-                            NEXHACK 1.0
-                        </h2> */}
                     </BoxReveal>
 
 
@@ -77,15 +74,11 @@ function HeroSection() {
 
                     <BoxReveal boxColor={"#d900ff"} duration={0.75}>
                         <div className="flex md:flex-row flex-col gap-2.5 md:items-center items-start  justify-between">
-                            <InteractiveHoverButton className={' bg-gradient-to-tr from-pink-500 to-orange-300'}>
-                                <p className="rounded-full w-fit text-xl sm:text-base">
+                            <Link href={'https://nexhack.devfolio.co/overview'} target="_blank" className="rounded-full w-fit text-xl sm:text-base">
+                                <InteractiveHoverButton className={' bg-gradient-to-tr from-pink-500 to-orange-300'}>
                                     Register Now On Devfolio
-                                </p>
-                            </InteractiveHoverButton>
-
-                            {/* <Link href={'#'} className="text-lg text-white border-b border-b-zinc-100 flex flex-row gap-2 items-center justify-between">
-                               <FaWhatsapp/> Join Whatsapp Group
-                            </Link> */}
+                                </InteractiveHoverButton>
+                            </Link>
                         </div>
                     </BoxReveal>
                 </div>

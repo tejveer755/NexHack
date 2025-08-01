@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/accordion"
 
 export function FaQSection() {
- const faqData = [
+const faqData = [
   {
     question: 'Who can participate?',
     answer: 'Anyone with a passion for tech can participate — students from any college, developers, and designers are all welcome. Team size must be between 2 to 5 members.'
@@ -28,16 +28,12 @@ export function FaQSection() {
     answer: 'Bring your laptop, charger, extension cord (if needed), ID card, and anything else you might need to work comfortably. We’ll provide internet, food, and workspace.'
   },
   {
-    question: 'Are hardware-based projects allowed?',
-    answer: 'Yes! You’re welcome to build hardware-based projects. Just bring the necessary components and inform us in advance if you need power supply or special arrangements.'
-  },
-  {
     question: 'How will projects be judged?',
     answer: 'Judging will be based on creativity, technical implementation, real-world impact, and how well you present your idea. Bonus points for innovation and usability!'
   },
   {
     question: 'Who do I contact for queries?',
-    answer: 'You can reach out to us at nexverse.iitm@gmail.com or DM us on Instagram or LinkedIn @nexverseiitm. We’re happy to help!'
+    answer: 'You can reach out to us at nexverseiitm@gmail.com or DM us on Instagram or LinkedIn @nexverseiitm. We’re happy to help!'
   }
 ];
 

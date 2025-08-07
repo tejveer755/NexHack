@@ -2,6 +2,8 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { ExpandableWrapper } from "./ui/ExpandableWrapper";
+import Image from "next/image";
+import Link from "next/link";
 
 const OurTeam = () => {
   const teamMembers = [
@@ -143,54 +145,58 @@ const OurTeam = () => {
   return (
     <ExpandableWrapper className="mb-36">
 
-    <div className="py-24 px-6 md:px-16 relative text-white" id="team">
-      <div className="absolute inset-0  top-[0%] bg-gradient-to-br from-[#289b9b2a]  via-[#29b6b238] to-[#3274f0a6] [mask-image:radial-gradient(670px_circle_at_40%_50%,white,transparent)]"></div>
+      <div className="py-24 px-6 md:px-16 relative text-white" id="team">
+        <div className="absolute inset-0  top-[0%] bg-gradient-to-br from-[#289b9b2a]  via-[#29b6b238] to-[#3274f0a6] [mask-image:radial-gradient(670px_circle_at_40%_50%,white,transparent)]"></div>
 
-      {/* Header */}
-      <h2 className="text-4xl md:text-6xl font-extrabold text-center mb-12 bg-gradient-to-tr from-white via-zinc-300 to-gray-400 bg-clip-text text-transparent border-b border-zinc-50 pb-3 w-fit mx-auto">
-        Our Core Team
-      </h2>
+        {/* Header */}
+        <h2 className="text-4xl md:text-6xl font-extrabold text-center mb-12 bg-gradient-to-tr from-white via-zinc-300 to-gray-400 bg-clip-text text-transparent border-b border-zinc-50 pb-3 w-fit mx-auto">
+          Our Core Team
+        </h2>
 
-      {/* Grid Layout */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        {teamMembers.map((member, idx) => (
-          <div
-            key={idx}
-            className="rounded-lg p-4 border border-white/10 backdrop-blur-sm hover:scale-105 transition-transform duration-300"
-          >
-            {/* Image */}
-            <div className="w-36 h-36 mx-auto mb-4">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-full h-full object-cover rounded-full border-4 border-white/20 shadow-md"
-              />
+        {/* Grid Layout */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {/* import Image from 'next/image'; */}
+
+          {teamMembers.map((member, idx) => (
+            <div
+              key={idx}
+              className="rounded-lg p-4 border border-white/10 backdrop-blur-sm hover:scale-105 transition-transform duration-300"
+            >
+              {/* Image */}
+              <div className="w-36 h-36 mx-auto mb-4 relative">
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  fill
+                  className="object-cover rounded-full border-4 border-white/20 shadow-md"
+                />
+              </div>
+
+              {/* Name + Title */}
+              <div className="text-center space-y-1">
+                <h3 className="text-xl font-semibold">{member.name}</h3>
+                <p className="text-sm text-gray-300">{member.title}</p>
+              </div>
+
+              {/* Socials */}
+              <div className="flex justify-center gap-3 mt-3">
+                {member.socials.map((social, index) => (
+                  <Link
+                    href={social.link}
+                    key={index}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {social.icon}
+                  </Link>
+                ))}
+              </div>
             </div>
+          ))}
 
-            {/* Name + Title */}
-            <div className="text-center space-y-1">
-              <h3 className="text-xl font-semibold">{member.name}</h3>
-              <p className="text-sm text-gray-300">{member.title}</p>
-            </div>
-
-            {/* Socials */}
-            <div className="flex justify-center gap-3 mt-3">
-              {member.socials.map((social, index) => (
-                <a
-                  href={social.link}
-                  key={index}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
-          </div>
-        ))}
+        </div>
       </div>
-    </div>
-        </ExpandableWrapper>
+    </ExpandableWrapper>
 
   );
 };

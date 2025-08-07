@@ -11,7 +11,7 @@ import {
 import Link from "next/link";
 import { InteractiveHoverButton } from "@/components/magicui/InteractiveHoverButton"; // Make sure this path is correct
 import { FaHandPointUp } from "react-icons/fa";
-
+import Image from "next/image";
 const Navbar = () => {
   const [mounted, setMounted] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -51,14 +51,16 @@ const Navbar = () => {
                 brightness={80}
                 opacity={0.8}
                 className="w-fit" > */}
-
-            <div className="w-24 h-auto z-10 text-center ">
-              <img
+            <div className="w-24 h-auto z-10 text-center">
+              <Image
                 src="/nexverseiitmlogo.png"
                 alt="nexverse-iitm logo"
+                width={96} // 24 * 4 = 96px (Tailwind w-24)
+                height={48} // Estimated height — adjust if needed
                 className="w-full h-auto object-contain"
               />
             </div>
+
             {/* </GlassSurface> */}
 
             <div className="flex justify-center lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2">
@@ -91,7 +93,7 @@ const Navbar = () => {
 
             {/* Register Button for Desktop */}
             <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
-                   {/* <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 rotate-90 text-2xl animate-bounce"><FaHandPointUp/></div> */}
+              {/* <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 rotate-90 text-2xl animate-bounce"><FaHandPointUp/></div> */}
               <Link href="https://nexhack.devfolio.co/overview" target="_blank">
                 <InteractiveHoverButton >
                   <p className="rounded-full w-fit h-full  text-xl sm:text-base">
@@ -129,8 +131,8 @@ const Navbar = () => {
                     >
                       <ul className="flex flex-col items-center gap-6 px-4 py-3 text-base">
                         {menuItems.map((item) => {
-                           const isGuidlinesPage = item.toLowerCase() === "guidelines";
-                    const href = isGuidlinesPage ? "/guidelines" : `/#${item.toLowerCase()}`;
+                          const isGuidlinesPage = item.toLowerCase() === "guidelines";
+                          const href = isGuidlinesPage ? "/guidelines" : `/#${item.toLowerCase()}`;
 
                           return (
                             <li key={item} className="cursor-pointer" onClick={() => setMenuOpen(false)}>

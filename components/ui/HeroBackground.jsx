@@ -10,7 +10,7 @@ export default function HeroBackground() {
       <div className="absolute inset-0  top-[10%] bg-gradient-to-br from-[#289b9b2a]  via-[#ec922438] to-[#3274f03a] [mask-image:radial-gradient(670px_circle_at_70%_35%,white,transparent)]"></div>
       <div className="
    bg-[radial-gradient(circle_at_30%_140%,bg-black,transparent_37%),radial-gradient(circle_at_50%_310%,#0400ff26,#a2a68700_78%),linear-gradient(transparent,#0d0a195e),radial-gradient(circle_at_50%_-30%,#a85c5c33,#67454500),radial-gradient(90%_10%_at_50%_0,#a85c5c0d,#67454500_90%)] absolute inset-0 top-[20%]"></div>
-    <Noise patternAlpha={2} patternSize={100} patternScaleY={0} />
+    <Noise patternAlpha={5} patternSize={200} patternScaleY={3} />
     </div>
   );
 }

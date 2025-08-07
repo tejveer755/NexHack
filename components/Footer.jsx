@@ -1,4 +1,5 @@
 import { Github, Twitter, Instagram, Linkedin, Mail, MapPin, Calendar } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 import { FaDiscord, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
 
@@ -13,10 +14,12 @@ export default function Footer() {
                     {/* Brand Section */}
                     <div className="lg:col-span-1 px-7">
                         <div className="mb-6">
-                            <img
+                            <Image
                                 src="/nexhacklogo.png"
                                 alt="NexHack logo"
-                                className="w-[200px] md:w-[230px] max-w-full  h-auto "
+                                width={230}  // max width at md breakpoint
+                                height={100} // estimated height, adjust if needed
+                                className="w-[200px] md:w-[230px] max-w-full h-auto"
                             />
                             <p className="text-gray-400 mt-2 text-sm leading-relaxed">
                                 Join the ultimate 24+ hour coding challenge. Build, innovate, and compete with the best developers
@@ -32,8 +35,15 @@ export default function Footer() {
                             </div>
                             <div className="flex items-center text-sm text-gray-300">
                                 <MapPin size={20} className="w-4 h-4 mr-2 text-xl text-yellow-400" />
-                                <span>Institute of Information Technology & Management D-29,
-                                    Institutional Area, Janakpuri, New Delhi-110058</span>
+                                <a
+                                    href="https://www.google.com/maps?q=Institute+of+Information+Technology+and+Management,+D-29,+Institutional+Area,+Janakpuri,+New+Delhi-110058"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:underline"
+                                >
+                                    Institute of Information Technology & Management D-29,
+                                    Institutional Area, Janakpuri, New Delhi-110058
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -103,23 +113,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Bottom Section */}
-                {/* <div className="mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-sm text-gray-400">© 2024 Nexhack. All rights reserved.</div>
-            <div className="flex space-x-6 text-sm">
-              <Link href="#privacy" className="text-gray-400 hover:text-yellow-400 transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="#terms" className="text-gray-400 hover:text-yellow-400 transition-colors">
-                Terms of Service
-              </Link>
-              <Link href="#cookies" className="text-gray-400 hover:text-yellow-400 transition-colors">
-                Cookie Policy
-              </Link>
-            </div>
-          </div> */}
-                {/* </div> */}
+
             </div>
         </footer>
     )

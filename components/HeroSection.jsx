@@ -23,7 +23,7 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { InteractiveHoverButton } from "./magicui/InteractiveHoverButton";
 import { Orbitron } from 'next/font/google'
 import Link from "next/link";
-
+import Image from "next/image";
 const orbitron = Orbitron({
     // variable: "--font-orbintron",
     subsets: ["latin"],
@@ -35,9 +35,12 @@ function HeroSection() {
                 {/* Left Content */}
                 <div className="w-full lg:w-1/2 lg:pl-7 flex flex-col justify-start gap-3">
                     <BoxReveal boxColor={"#d900ff"} duration={0.5}>
-                        <img
+
+                        <Image
                             src="/nexhacklogo.png"
                             alt="NexHack logo"
+                            width={750}
+                            height={400}
                             className="w-[400px] sm:w-[500px] md:w-[590px] lg:w-[750px] xl:w-[600px] max-w-full h-auto mx-auto"
                         />
                     </BoxReveal>

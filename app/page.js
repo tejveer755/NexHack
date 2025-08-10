@@ -35,7 +35,7 @@ function Page() {
   }, []);
 
   if (loading) return <Loading />;
-
+console.log("page loaded on vercel")
   return (
     <div className="relative scroll-smooth">
       <Navbar />

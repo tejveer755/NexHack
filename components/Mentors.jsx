@@ -92,7 +92,7 @@ function Mentors() {
   ];
 
   return (
-    <section className="py-20 px-4 md:px-8 relative lg:px-10 overflow-hidden" id='judges'>
+    <section className="py-20 px-3  md:px-8 relative lg:px-10 overflow-hidden" id='judges'>
       <motion.h2
         initial={{ backgroundPosition: '0% 50%' }}
         animate={{ backgroundPosition: '100% 50%' }}

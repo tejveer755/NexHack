@@ -1,45 +1,111 @@
 'use client'
 import React from 'react';
-import { FocusCards } from './ui/focus-cards'; // Ensure this component exists
+import { FocusCards } from './ui/focus-cards';
 import { motion } from 'framer-motion';
-import { Particles } from './ui/Particles';
-import { MagicCard } from './ui/MagicCard';
 
 function Mentors() {
   const cards = [
     {
-      title: 'Mentor ',
-      src: '/coming_soon.png',
-      designation: 'lorem3 heiew wsb',
+      title: 'Naman Bakul',
+      src: '/mentors/namanbakul.png',
+      designation: 'Senior DevOps Engineer',
+      company: 'MakeMyTrip',
+      linkedin: 'https://www.linkedin.com/in/naman-badkul-2b3a58168'
+    },
+    {
+      title: 'Dheeraj Kumar',
+      src: '/mentors/dheerajkumar.png',
+      designation: 'Senior Solutions Architect ',
+      company: 'MongoDB',
+      linkedin: 'https://www.linkedin.com/in/dheerajtechy'
+    },
+    {
+      title: 'Yash Chatrath',
+      src: '/mentors/yashchatrath.png',
+      designation: 'Data analyst ',
+      company: 'Sony',
+      linkedin: 'https://www.linkedin.com/in/chatrath-yash'
+    },
+    {
+      title: 'Kashvi Arora',
+      src: '/mentors/kashviarora.jpg',
+      designation: 'Developer Relations Engineer',
+      company: 'QuickBox',
+      linkedin: 'https://www.linkedin.com/in/kashvi15'
+    },
+     {
+      title: 'Avanish Kumar Singh',
+      src: '/mentors/avanishkumarsingh.png',
+      designation: 'Assistant Manager - AI ',
+      company: 'Adani Defence & Aerospace',
+      linkedin: 'http://linkedin.com/in/avanishh'
+    },
+     {
+      title: 'Bimlesh',
+      src: '/mentors/bimlesh.png',
+      designation: 'Software Developer Intern',
+      company: 'GOI',
+      linkedin: 'https://www.linkedin.com/in/bimlesharma'
+    },
+    {
+      title: 'Tushika Rawat',
+      src: '/mentors/tushikarawat.png',
+      designation: 'Intern',
+      company: 'PhysicsWallah',
+      linkedin: 'https://www.linkedin.com/in/tushika-rawat'
+    },
+    {
+      title: 'Karan Vaswani',
+      src: '/mentors/karanvaswani.png',
+      designation: 'Full Stack Developer ',
+      company: 'Deployd.io',
+      linkedin: 'https://www.linkedin.com/in/karan-v-270102'
+    },
+    {
+      title: 'Ekta Arora',
+      src: '/mentors/ektaarora.png',
+      designation: 'Ex-SDE intern ',
+      company: 'Prodigy InfoTech',
+      linkedin: 'http://linkedin.com/in/ektaarora01'
+    },
+    {
+      title: 'Vinit Vijal',
+      src: '/mentors/vinitvijal.png',
+      designation: 'SDE-1',
+      company: 'SBT Inc., Canada',
+      linkedin: 'https://www.linkedin.com/in/vinitvijal'
+    },
+    {
+      title: 'Mohammad Jari',
+      src: '/mentors/mohammadjari.png',
+      designation: 'Data Scientist and Ai Trainer',
+      company: ' ',
       linkedin: '#'
-    }
+    },
+    {
+      title: 'Nandini Singh ',
+      src: '/mentors/nandinisingh.png',
+      designation: 'Jr. Associate – Data & Science  ',
+      company: 'SoftwareOne',
+      linkedin: 'https://www.linkedin.com/in/nandinisingh05'
+    },
   ];
 
   return (
-    <section className="py-20 px-4 md:px-8 relative lg:px-10 " id='judges'>
-      {/* <div className="absolute inset-0 h-1/2  ">
-        <Particles ease={300} staticity={50} vx={-0.8} vy={-.3}/>
-    </div> */}
+    <section className="py-20 px-4 md:px-8 relative lg:px-10 overflow-hidden" id='judges'>
       <motion.h2
         initial={{ backgroundPosition: '0% 50%' }}
         animate={{ backgroundPosition: '100% 50%' }}
         transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
-        className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 
+        className="text-4xl md:text-4xl lg:text-6xl font-bold mb-12 
         text-transparent bg-clip-text 
         bg-gradient-to-r from-orange-400 via-pink-300 to-cyan-400
         bg-[length:300%_300%] text-center w-fit mx-auto border-b border-zinc-50 pb-3 z-50"
       >
-        Meet Our Mentors & Judges
+        Meet Our Judges & Mentors 
       </motion.h2>
-      {/* <FocusCards cards={cards} /> */}
-      <div className="relative">
-        {/* Background glow effect */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 blur-3xl " />
-        <div className="relative z-10 flex items-center justify-center">
-          <img src="/coming_soon.png" alt="Coming Soon" className="w-auto max-w-xs md:max-w-md" />
-        </div>
 
-      </div>
+      <FocusCards cards={cards} />
     </section>
   );
 }

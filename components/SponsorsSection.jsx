@@ -17,7 +17,7 @@ export default function SponsorSection() {
 
     <section className="relative  py-24 overflow-hidden" id="sponsors">
       {/* Gradient masks */}
-      <div className="absolute inset-0 z[2]">
+      <div className="absolute inset-0 z[-1]">
         <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black/20" />
         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-transparent to-black/20" />
         <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-transparent to-black/10" />
@@ -70,7 +70,7 @@ export default function SponsorSection() {
 
       </div>
 
-      <div className="absolute inset-0  ">
+      <div className="absolute inset-0  z[5]">
         <Particles ease={300} staticity={50} vx={-0.8} vy={.3} />
       </div>
     </section>

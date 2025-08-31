@@ -70,9 +70,9 @@ export default function SponsorSection() {
 
       </div>
 
-      <div className="absolute inset-0  z[5]">
+      {/* <div className="absolute inset-0  z[5]">
         <Particles ease={300} staticity={50} vx={-0.8} vy={.3} />
-      </div>
+      </div> */}
     </section>
   )
 }

@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react"
 import { motion, useAnimation } from "framer-motion"
 import CountUp from "./ui/CountUp"
-import { Badge } from "@/components/ui/badge"
 
 export default function Loading() {
   const [progress, setProgress] = useState(0)
@@ -36,7 +35,6 @@ export default function Loading() {
 
       <div className=" text-white py-12">
         <div className="container mx-auto px-6 text-center">
-          <Badge className="mb-4 bg-gray-700 text-white">AI for Real World Impact</Badge>
           <img
             src="/nexhacklogo.png"
             alt="NexHack logo"

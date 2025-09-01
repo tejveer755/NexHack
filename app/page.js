@@ -19,19 +19,12 @@ function Page() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const hasVisited = sessionStorage.getItem("hasVisited");
-
-    if (hasVisited) {
-      // Skip loading screen if visited before
-      setLoading(false);
-    } else {
-      // Show loading only on first visit
+    
       const timer = setTimeout(() => {
         setLoading(false);
-        sessionStorage.setItem("hasVisited", "true");
-      }, 2000); // Show loading for 2 seconds
+      }, 5000); // Show loading for 2 seconds
       return () => clearTimeout(timer);
-    }
+    
   }, []);
 
   if (loading) return <Loading />;

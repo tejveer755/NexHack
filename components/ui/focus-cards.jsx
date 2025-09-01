@@ -24,7 +24,6 @@ export const Card = React.memo(
           fill
           sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover rounded-lg"
-          priority={index < 2} // prioritize first few images
         />
       </div>
 
@@ -32,7 +31,7 @@ export const Card = React.memo(
       <div
         className={cn(
           // mobile: static below image | desktop: overlay
-          "w-full px-3 py-3 flex flex-col itmb justify-end  text-white",
+          "w-full px-3 py-3 flex flex-col justify-end  text-white",
           "md:absolute md:inset-0 md:flex md:items-end md:py-4 md:px-4 md:transition-opacity md:duration-300",
           // hovered === index ? "opacity-100" : "md:opacity-0"
         )}
@@ -41,7 +40,7 @@ export const Card = React.memo(
           <h3 className="text-lg md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200 truncate">
             {card.title}
           </h3>
-          <div className="flex items-center mt-2 justify-between gap-2">
+          <div className="flex md:flex-row flex-col items-start mt-2 justify-between gap-2">
             <div className="text-xs md:text-sm text-gray-200 space-y-1">
               <p className="truncate">{card.designation}</p>
               <p className="font-semibold truncate">{card.company}</p>
@@ -62,7 +61,7 @@ export function FocusCards({ cards }) {
   const [hovered, setHovered] = useState(null);
 
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:gap-10 max-w-7xl mx-auto md:px-8 w-full">
+    <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:gap-10 max-w-7xl mx-auto px-0 md:px-8 w-full">
       {cards.map((card, index) => (
         <Card
           key={card.title}

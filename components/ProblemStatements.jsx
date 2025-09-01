@@ -74,27 +74,27 @@ const problemStatements = [
 ];
 
 
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/nexhack-problem-statements.pdf'; // file in /public/sample.pdf
-    link.download = 'nexhack-problem-statements.pdf';
-    link.click();
-  };
+const handleDownload = () => {
+  const link = document.createElement('a');
+  link.href = '/nexhack-problem-statements.pdf'; // file in /public/sample.pdf
+  link.download = 'nexhack-problem-statements.pdf';
+  link.click();
+};
 
 function ProblemStatements() {
-    const router = useRouter();
-    return (
-        <section className="w-full min-h-screen bg-gradient-to-br from-transparent  to-transparent text-white py-16 px-4 md:px-12 lg:px-24">
-            <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-purple-400 via-blue-400 to-teal-300  bg-clip-text text-transparent pb-3">
-                    Problem Statements
-                </h2>
-                <p className="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">
-                    Explore real-world AI challenges that aim to solve societal, environmental, and technological problems.
-                </p>
-            </div>
+  const router = useRouter();
+  return (
+    <section className="w-full min-h-screen bg-gradient-to-br from-transparent  to-transparent text-white py-16 px-4 md:px-12 lg:px-24">
+      <div className="text-center mb-16">
+        <h2 className="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-purple-400 via-blue-400 to-teal-300  bg-clip-text text-transparent pb-3">
+          Problem Statements
+        </h2>
+        <p className="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">
+          Explore real-world AI challenges that aim to solve societal, environmental, and technological problems.
+        </p>
+      </div>
 
-            <div className="mx-auto w-full">
+      <div className="mx-auto w-full">
                 <InfiniteMovingCards
                     items={problemStatements.slice(0, 5)}
                     direction="left"
@@ -105,37 +105,37 @@ function ProblemStatements() {
                     direction="right"
                     speed="slow"
                 />
-            </div>
-          <div className="mt-12 flex flex-col md:flex-row gap-6 md:gap-9 items-center justify-center px-4">
-  {/* Open Innovation Capsule */}
-  <div className="relative group w-full md:w-auto">
-    {/* Gradient Border */}
-    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 blur-sm opacity-75 group-hover:opacity-100 transition duration-300"></div>
-
-    {/* Content Capsule */}
-    <div className="relative rounded-full px-6 py-3 text-sm md:text-base text-center bg-zinc-900 text-white font-medium shadow-md border border-transparent group-hover:border-zinc-800 transition-all duration-300">
-      <span className="block">
-        Open Innovation: Develop an AI solution beyond the listed challenges — <br className="hidden sm:block" />
-        anything impactful, creative, and rooted in real-world needs.
-      </span>
-    </div>
-  </div>
-
-  {/* Download Button */}
-  <div className="relative group w-fit md:w-auto">
-    <button onClick={handleDownload} className="cursor-pointer w-fit  md:w-auto">
-      <div className="relative px-4 py-3 text-sm md:text-base text-center text-white font-medium shadow-md border-b border-zinc-100   transition-all duration-300">
-        Download Problem Statements
       </div>
-    </button>
-  </div>
-</div>
+      <div className="mt-12 flex flex-col md:flex-row gap-6 md:gap-9 items-center justify-center px-4">
+        {/* Open Innovation Capsule */}
+        <div className="relative group w-full md:w-auto">
+          {/* Gradient Border */}
+          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 blur-sm opacity-75 group-hover:opacity-100 transition duration-300"></div>
+
+          {/* Content Capsule */}
+          <div className="relative rounded-full px-6 py-3 text-sm md:text-base text-center bg-zinc-900 text-white font-medium shadow-md border border-transparent group-hover:border-zinc-800 transition-all duration-300">
+            <span className="block">
+              Open Innovation: Develop an AI solution beyond the listed challenges — <br className="hidden sm:block" />
+              anything impactful, creative, and rooted in real-world needs.
+            </span>
+          </div>
+        </div>
+
+        {/* Download Button */}
+        <div className="relative group w-fit md:w-auto">
+          <button onClick={handleDownload} className="cursor-pointer w-fit  md:w-auto">
+            <div className="relative px-4 py-3 text-sm md:text-base text-center text-white font-medium shadow-md border-b border-zinc-100   transition-all duration-300">
+              Download Problem Statements
+            </div>
+          </button>
+        </div>
+      </div>
 
 
 
 
-        </section>
-    )
+    </section>
+  )
 }
 
 export default ProblemStatements

@@ -74,7 +74,7 @@ function HeroSection() {
 
                         <div className="inline-block bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold px-4 py-2 rounded-full shadow-lg text-sm md:text-base">
                             ⏳ Registration Deadline Extended till{" "}
-                            <span className="font-bold text-yellow-300">7th September</span> 🎉
+                            <span className="font-bold text-yellow-300">7th September</span> 
                         </div>
                     </BoxReveal>
 

@@ -57,14 +57,12 @@ function HeroSection() {
                     </BoxReveal>
 
                     <BoxReveal boxColor={"#d900ff"} duration={0.85}>
-                        <h2 className="text-white font-semibold text-md leading-relaxed">
-                            🗓 Registration Starts
-                            <span className="font-bold"> 1st Aug</span>
-                            <br />
+                        <h2 className="text-white font-semibold text-md leading-relaxed mt-4">
                             💻 Online Round: <span className="font-bold">20 Sep</span>
                             <br />
                             📍 Hack @ IITM: <span className="font-bold">26–27 Sep</span>
                         </h2>
+                        
                     </BoxReveal>
 
                     <BoxReveal boxColor={"#d900ff"} duration={0.7}>
@@ -73,6 +71,11 @@ function HeroSection() {
                             <span className="font-semibold">certificates</span> &{" "}
                             <span className="font-semibold">prizes</span> for all!
                         </h2>
+
+                        <div className="inline-block bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold px-4 py-2 rounded-full shadow-lg text-sm md:text-base">
+                            ⏳ Registration Deadline Extended till{" "}
+                            <span className="font-bold text-yellow-300">7th September</span> 🎉
+                        </div>
                     </BoxReveal>
 
                     <BoxReveal boxColor={"#d900ff"} duration={0.75}>

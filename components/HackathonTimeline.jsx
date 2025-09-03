@@ -106,9 +106,9 @@ export function HackathonTimeline() {
 
           {/* Capsule Button */}
           <div
-            className="relative cursor-pointer rounded-full px-6 py-3 text-sm md:text-base text-center bg-zinc-900 text-white font-medium shadow-md border border-transparent group-hover:border-zinc-800 transition-all duration-300"
+            className="relative rounded-full px-6 py-3 text-sm md:text-base text-center bg-zinc-900 text-white font-medium shadow-md border border-transparent group-hover:border-zinc-800 transition-all duration-300"
           >
-            <Link href={'/guidelines'} className='w-full h-full'>Refer to the official guidelines for clear and reliable instructions</Link>
+            <p className='w-full h-full'>Refer to the official guidelines for clear and reliable instructions</p>
           </div>
         </div>
       </div>

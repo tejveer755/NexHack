@@ -2,21 +2,22 @@
 
 import { useEffect, useState } from "react";
 import GlassSurface from "./ui/GlassSurface";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import {
   DropdownMenuContent,
   DropdownMenuTrigger,
   DropdownMenu,
 } from "./ui/dropdown-menu";
 import Link from "next/link";
-import { InteractiveHoverButton } from "@/components/magicui/InteractiveHoverButton"; // Make sure this path is correct
-import { FaHandPointUp } from "react-icons/fa";
+import { InteractiveHoverButton } from "@/components/magicui/InteractiveHoverButton";
 import Image from "next/image";
+import Guidelines from "./Guidelines";
+
 const Navbar = () => {
   const [mounted, setMounted] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const [openGuidelines, setOpenGuidelines] = useState(false);
   const breakpoint = 1050;
 
   useEffect(() => {
@@ -27,6 +28,20 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Prevent background scrolling when modal is open
+  useEffect(() => {
+    if (openGuidelines) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [openGuidelines]);
+
   const menuItems = [
     "Home",
     "About",
@@ -34,9 +49,17 @@ const Navbar = () => {
     "Prizes",
     "Judges",
     "Sponsors",
-    "Guidelines",
     "FAQ",
   ];
+
+  const handleCloseModal = () => {
+    setOpenGuidelines(false);
+  };
+
+  const handleOpenGuidelines = () => {
+    setOpenGuidelines(true);
+    setMenuOpen(false); // Close mobile menu when opening guidelines
+  };
 
   return (
     <div className="text-white p-4 px-6 sticky top-4 z-50 w-full">
@@ -79,14 +102,16 @@ const Navbar = () => {
                     const href = isGuidlinesPage ? "/guidelines" : `/#${item.toLowerCase()}`;
 
                     return (
-                      <li key={item} className="cursor-pointer" onClick={() => setMenuOpen(false)}>
+                      <li key={item} className="cursor-pointer" >
                         <Link href={href}>
                           {item}
                         </Link>
                       </li>
                     );
                   })}
-
+                  <button className="cursor-pointer" onClick={handleOpenGuidelines}>
+                    Guidelines
+                  </button>
                 </ul>
               </GlassSurface>
             </div>
@@ -105,6 +130,28 @@ const Navbar = () => {
           </>
         )}
 
+        {/* Guidelines Modal */}
+        {openGuidelines && (
+          <div className="fixed w-full h-full z-50 inset-0 bg-black/30 backdrop-blur-lg">
+            <div className="h-full overflow-y-auto p-0 md:p-10">
+              <div className="relative max-w-7xl mx-auto">
+                {/* Close Button */}
+                <button
+                  onClick={handleCloseModal}
+                  className="fixed top-6 right-6 z-60 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 rounded-full p-2 transition-all duration-200"
+                  aria-label="Close Guidelines"
+                >
+                  <X className="w-6 h-6 text-white" />
+                </button>
+                
+                <div className="rounded-3xl">
+                  <Guidelines />
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Mobile Nav */}
         {isMobile && (
           <div className="flex flex-row items-center justify-between w-full -mt-4">
@@ -121,14 +168,11 @@ const Navbar = () => {
                 {/* Register Button for Mobile */}
 
                 <DropdownMenu open={menuOpen} onOpenChange={setMenuOpen} modal={false}>
-
                   <DropdownMenuTrigger >
                     <Menu className="text-white text-lg" />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent className="bg-transparent border-0 mr-8 mt-6">
-                    <div
-                      className="border border-white/20 bg-white/5 p-2 backdrop-blur-lg w-72 rounded-2xl"
-                    >
+                    <div className="border border-white/20 bg-white/5 p-2 backdrop-blur-lg w-72 rounded-2xl">
                       <ul className="flex flex-col items-center gap-6 px-4 py-3 text-base">
                         {menuItems.map((item) => {
                           const isGuidlinesPage = item.toLowerCase() === "guidelines";
@@ -142,7 +186,11 @@ const Navbar = () => {
                             </li>
                           );
                         })}
-
+                        
+                        {/* Guidelines Button for Mobile */}
+                        <li className="cursor-pointer" onClick={handleOpenGuidelines}>
+                          <button>Guidelines</button>
+                        </li>
                       </ul>
                     </div>
                   </DropdownMenuContent>

@@ -1,27 +1,10 @@
-'use client'
-
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { useState, useEffect } from "react"
-import Loading from '../../components/loading'
 
-export default function Rules() {
-  const [mounted, setMounted] = useState(false)
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    setMounted(true)
-    const timer = setTimeout(() => {
-      setLoading(false)
-    }, 2000) // Show loading for 2 seconds
-
-    return () => clearTimeout(timer)
-  }, [])
-
-  if (!mounted) return null
-  if (loading) return <Loading />
+export default function Guidelines() {
+  
   return (
-    <div className="min-h-screen bg-zinc-950 text-gray-300">
+    <div className="min-h-screen overflow-hidden p-7 md:p-0 max-w-6xl mx-auto  rounded-4xl  bg-zinc-950 text-gray-300">
       {/* Header */}
       <div className="bg-zinc-950 backdrop-blur-lg text-white py-12">
         <div className="container mx-auto px-6 text-center">
@@ -37,15 +20,8 @@ export default function Rules() {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-6 py-12 max-w-4xl">
-        {/* Welcome */}
-        <div className="mb-12">
-          <p className="text-lg leading-relaxed text-gray-300">
-            Welcome, <strong className="text-white">innovators</strong>! To ensure a fair, competitive, and enjoyable
-            event for everyone, all participants and teams must adhere to the following rules.
-          </p>
-        </div>
-
+      <div className=" mx-auto  py-12 max-w-4xl">
+     
         {/* Section 1: General Rules */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-white mb-6 pb-2 border-b-2 border-gray-700">1. General Rules</h2>

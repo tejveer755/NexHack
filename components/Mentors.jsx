@@ -79,7 +79,7 @@ function Mentors() {
       title: 'Mohammad Jari',
       src: '/mentors/mohammadjari.png',
       designation: 'Data Scientist and Ai Trainer',
-      company: ' ',
+      company: 'Ikigai school of ai',
       linkedin: '#'
     },
     {

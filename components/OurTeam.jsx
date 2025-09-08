@@ -17,7 +17,7 @@ const OurTeam = () => {
           link: "https://www.linkedin.com/in/amaani-arora-65028a263/",
         },
       ],
-      image: "/amaanii.png",
+      image: "/team/amaanii.png",
     },
     {
       name: "Chirag Jain",
@@ -30,7 +30,7 @@ const OurTeam = () => {
         },
       ],
       featured: true,
-      image: "/chirag.png",
+      image: "/team/chirag.png",
     },
     {
       name: "Stuti Sharma",
@@ -42,7 +42,7 @@ const OurTeam = () => {
           link: "https://www.linkedin.com/in/stuti-sharma240506/",
         },
       ],
-      image: "/stuti.jpg",
+      image: "/team/stuti.jpg",
     },
     {
       name: "Tushar Sharma",
@@ -54,7 +54,7 @@ const OurTeam = () => {
           link: "https://www.linkedin.com/in/tushar-sharma-6a037a281/",
         },
       ],
-      image: "/tushar.png",
+      image: "/team/tushar.png",
     },
     {
       name: "Tejveer Singh",
@@ -66,7 +66,7 @@ const OurTeam = () => {
           link: "https://www.linkedin.com/in/tejveer-singh-3133a7323/",
         },
       ],
-      image: "/tejveer.jpg",
+      image: "/team/tejveer.jpg",
     },
     {
       name: "Akshat Jain",
@@ -78,7 +78,7 @@ const OurTeam = () => {
           link: "https://www.linkedin.com/in/akshat-jain-b733b81b6",
         },
       ],
-      image: "/akshat.jpg",
+      image: "/team/akshat.jpg",
     },
     {
       name: "Ayush Kumar",
@@ -90,7 +90,7 @@ const OurTeam = () => {
           link: "#",
         },
       ],
-      image: "/ayushkumar.jpg",
+      image: "/team/ayushkumar.jpg",
     },
     {
       name: "Tanya Gusain",
@@ -102,7 +102,7 @@ const OurTeam = () => {
           link: "https://www.linkedin.com/in/taniyagusain/",
         },
       ],
-      image: "/taniya.png",
+      image: "/team/taniya.png",
     },
     {
       name: "Hrishabh Raj",
@@ -114,7 +114,7 @@ const OurTeam = () => {
           link: "https://www.linkedin.com/in/hrishabhraj05/",
         },
       ],
-      image: "/hrishabh.jpg",
+      image: "/team/hrishabh.jpg",
     },
     {
       name: "Sakshi Sharma",
@@ -126,7 +126,7 @@ const OurTeam = () => {
           link: "https://www.linkedin.com/in/sakshi-sharma-69b371314/",
         },
       ],
-      image: "/sakshi.png",
+      image: "/team/sakshi.png",
     },
     {
       name: "Kunjal Kharb",
@@ -138,7 +138,7 @@ const OurTeam = () => {
           link: "https://www.linkedin.com/in/kunjal-kharb-463986316/",
         },
       ],
-      image: "/kunjal.jpg",
+      image: "/team/kunjal.jpg",
     },
   ];
 

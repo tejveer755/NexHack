@@ -14,8 +14,8 @@ function Mentors() {
     },
     {
       title: 'Dheeraj Kumar',
-      src: '/mentors/dheerajkumar.png',
-      designation: 'Senior Solutions Architect ',
+      src: '/mentors/dheerajkumar.jpg',
+      designation: 'Senior Solutions Architect',
       company: 'MongoDB',
       linkedin: 'https://www.linkedin.com/in/dheerajtechy'
     },
@@ -29,7 +29,7 @@ function Mentors() {
     {
       title: 'Kashvi Arora',
       src: '/mentors/kashviarora.jpg',
-      designation: 'Developer Relations Engineer',
+      designation: 'AI\ML Engineer',
       company: 'QuickBox',
       linkedin: 'https://www.linkedin.com/in/kashvi15'
     },
@@ -44,7 +44,7 @@ function Mentors() {
       title: 'Bimlesh',
       src: '/mentors/bimlesh.png',
       designation: 'Software Developer Intern',
-      company: 'GOI',
+      company: 'Intern with Govt. of India',
       linkedin: 'https://www.linkedin.com/in/bimlesharma'
     },
     {
@@ -80,14 +80,21 @@ function Mentors() {
       src: '/mentors/mohammadjari.png',
       designation: 'Data Scientist and Ai Trainer',
       company: 'Ikigai school of ai',
-      linkedin: '#'
+      linkedin: 'https://www.linkedin.com/in/mohammadjari'
     },
     {
       title: 'Nandini Singh ',
       src: '/mentors/nandinisingh.png',
-      designation: 'Jr. Associate – Data & Science  ',
+      designation: 'Jr. Associate - Data & AI',
       company: 'SoftwareOne',
       linkedin: 'https://www.linkedin.com/in/nandinisingh05'
+    },
+    {
+      title: 'Isha Singh ',
+      src: '/mentors/ishasingh.jpg',
+      designation: ' AI enginner ',
+      company: 'Fourmeta',
+      linkedin: 'https://www.linkedin.com/in/isha-singh-aa26b4273'
     },
   ];
 

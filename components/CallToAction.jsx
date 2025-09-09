@@ -31,13 +31,13 @@ export default function CallToAction() {
           <p className="text-gray-300 text-sm md:text-base">
             Join hundreds of college innovators for 24 hours of coding, chaos, creativity — and maybe caffeine. Build something awesome with your friends and win exciting prizes!
           </p>
-          <Link
+        {/* <Link
             href="https://nexhack.devfolio.co/overview"
             target='_blank'
             className="inline-block mt-4 px-6 py-3 rounded-full bg-white text-black text-sm md:text-base font-medium hover:bg-gray-200 transition"
           >
             Register Your Squad 🚀
-          </Link>
+          </Link> */}
         </div>
       </MagicCard>
     </section>

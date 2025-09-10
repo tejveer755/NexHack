@@ -138,7 +138,8 @@ export default function MentorAssignments() {
             <Badge className="mb-4 bg-gray-700 text-white">
               Online Round
             </Badge>
-            <img
+            <Image
+            width={200} height={300}
               src="/nexhacklogo.png"
               alt="NexHack logo"
               className="w-[200px] md:w-[300px]  max-w-full h-auto mx-auto"

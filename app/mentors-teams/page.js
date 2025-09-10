@@ -454,9 +454,7 @@ export default function MentorAssignments() {
               Need Assistance?
             </h3>
             <p className="text-gray-200 leading-relaxed">
-              Can't find your team or having trouble accessing the WhatsApp
-              group? Reach out to the NexHack organizing team for immediate
-              support.
+            { " Can't find your team or having trouble accessing the WhatsApp group? Reach out to the NexHack organizing team for immediate support."}
             </p>
           </div>
         </motion.div>

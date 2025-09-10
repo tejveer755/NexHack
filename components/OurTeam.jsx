@@ -17,7 +17,7 @@ const OurTeam = () => {
           link: "https://www.linkedin.com/in/amaani-arora-65028a263/",
         },
       ],
-      image: "/team/amaanii.png",
+      image: "/amaanii.png",
     },
     {
       name: "Chirag Jain",
@@ -30,7 +30,7 @@ const OurTeam = () => {
         },
       ],
       featured: true,
-      image: "/team/chirag.png",
+      image: "/chirag.png",
     },
     {
       name: "Stuti Sharma",
@@ -42,7 +42,7 @@ const OurTeam = () => {
           link: "https://www.linkedin.com/in/stuti-sharma240506/",
         },
       ],
-      image: "/team/stuti.jpg",
+      image: "/stuti.jpg",
     },
     {
       name: "Tushar Sharma",
@@ -54,7 +54,7 @@ const OurTeam = () => {
           link: "https://www.linkedin.com/in/tushar-sharma-6a037a281/",
         },
       ],
-      image: "/team/tushar.png",
+      image: "/tushar.png",
     },
     {
       name: "Tejveer Singh",
@@ -66,7 +66,7 @@ const OurTeam = () => {
           link: "https://www.linkedin.com/in/tejveer-singh-3133a7323/",
         },
       ],
-      image: "/team/tejveer.jpg",
+      image: "/tejveer.jpg",
     },
     {
       name: "Akshat Jain",
@@ -78,7 +78,7 @@ const OurTeam = () => {
           link: "https://www.linkedin.com/in/akshat-jain-b733b81b6",
         },
       ],
-      image: "/team/akshat.jpg",
+      image: "/akshat.jpg",
     },
     {
       name: "Ayush Kumar",
@@ -90,7 +90,7 @@ const OurTeam = () => {
           link: "#",
         },
       ],
-      image: "/team/ayushkumar.jpg",
+      image: "/ayushkumar.jpg",
     },
     {
       name: "Tanya Gusain",
@@ -102,7 +102,7 @@ const OurTeam = () => {
           link: "https://www.linkedin.com/in/taniyagusain/",
         },
       ],
-      image: "/team/taniya.png",
+      image: "/taniya.png",
     },
     {
       name: "Hrishabh Raj",
@@ -114,7 +114,7 @@ const OurTeam = () => {
           link: "https://www.linkedin.com/in/hrishabhraj05/",
         },
       ],
-      image: "/team/hrishabh.jpg",
+      image: "/hrishabh.jpg",
     },
     {
       name: "Sakshi Sharma",
@@ -126,7 +126,7 @@ const OurTeam = () => {
           link: "https://www.linkedin.com/in/sakshi-sharma-69b371314/",
         },
       ],
-      image: "/team/sakshi.png",
+      image: "/sakshi.png",
     },
     {
       name: "Kunjal Kharb",
@@ -138,7 +138,7 @@ const OurTeam = () => {
           link: "https://www.linkedin.com/in/kunjal-kharb-463986316/",
         },
       ],
-      image: "/team/kunjal.jpg",
+      image: "/kunjal.jpg",
     },
   ];
 
@@ -160,10 +160,10 @@ const OurTeam = () => {
           {teamMembers.map((member, idx) => (
             <div
               key={idx}
-              className="rounded-lg p-4 border border-white/10 backdrop-blur-sm hover:scale-105 transition-transform duration-300"
+              className="rounded-lg p-4 border border-white/10 backdrop-blur-sm hover:scale-105 transition-transform duration-300 flex flex-col items-center justify-between overflow-hidden"
             >
               {/* Image */}
-              <div className="w-36 h-36 mx-auto mb-4 relative">
+              <div className="w-full max-w-xs mx-auto mb-4 aspect-square relative">
                 <Image
                   src={member.image}
                   alt={member.name}
@@ -192,6 +192,7 @@ const OurTeam = () => {
                 ))}
               </div>
             </div>
+
           ))}
 
         </div>

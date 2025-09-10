@@ -14,6 +14,7 @@ import Footer from "@/components/Footer";
 import CallToAction from "@/components/CallToAction";
 import ProblemStatements from "@/components/ProblemStatements";
 import Loading from "@/components/loading";
+import { Announcement } from "@/components/Announcement";
 
 function Page() {
   const [loading, setLoading] = useState(true);
@@ -34,6 +35,7 @@ function Page() {
       <Navbar />
       <HeroBackground />
       <HeroSection />
+      <Announcement/>
       <HackathonFeatures />
       <ProblemStatements />
       <HackathonTimeline />

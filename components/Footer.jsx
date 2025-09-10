@@ -51,7 +51,7 @@ export default function Footer() {
                     {/* Quick Links */}
                     <div className="lg:pl-8 px-7">
                         <h4 className="text-lg font-semibold mb-6 text-white">Quick Links</h4>
-                        <ul className="space-y-3 flex flex-col gap-x-1 flex-wrap max-h-[200px]">
+                        <ul className="space-y-3 flex flex-col gap-x-1 flex-wrap max-h-[150px]">
                             {[
 
                                 { name: "About", href: "#about" },

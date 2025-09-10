@@ -7,91 +7,91 @@ function Mentors() {
   const cards = [
     {
       title: 'Naman Bakul',
-      src: '/mentors/namanbakul.png',
+      src: '/namanbakul.png',
       designation: 'Senior DevOps Engineer',
       company: 'MakeMyTrip',
       linkedin: 'https://www.linkedin.com/in/naman-badkul-2b3a58168'
     },
     {
       title: 'Dheeraj Kumar',
-      src: '/mentors/dheerajkumar.jpg',
+      src: '/dheerajkumar.jpg',
       designation: 'Senior Solutions Architect',
       company: 'MongoDB',
       linkedin: 'https://www.linkedin.com/in/dheerajtechy'
     },
     {
       title: 'Yash Chatrath',
-      src: '/mentors/yashchatrath.png',
+      src: '/yashchatrath.png',
       designation: 'Data analyst ',
       company: 'Sony',
       linkedin: 'https://www.linkedin.com/in/chatrath-yash'
     },
     {
       title: 'Kashvi Arora',
-      src: '/mentors/kashviarora.jpg',
+      src: '/kashviarora.jpg',
       designation: 'AI\ML Engineer',
       company: 'QuickBox',
       linkedin: 'https://www.linkedin.com/in/kashvi15'
     },
      {
       title: 'Avanish Kumar Singh',
-      src: '/mentors/avanishkumarsingh.png',
+      src: '/avanishkumarsingh.png',
       designation: 'Assistant Manager - AI ',
       company: 'Adani Defence & Aerospace',
       linkedin: 'http://linkedin.com/in/avanishh'
     },
      {
       title: 'Bimlesh',
-      src: '/mentors/bimlesh.png',
+      src: '/bimlesh.png',
       designation: 'Software Developer Intern',
       company: 'Intern with Govt. of India',
       linkedin: 'https://www.linkedin.com/in/bimlesharma'
     },
     {
       title: 'Tushika Rawat',
-      src: '/mentors/tushikarawat.png',
+      src: '/tushikarawat.png',
       designation: 'Intern',
       company: 'PhysicsWallah',
       linkedin: 'https://www.linkedin.com/in/tushika-rawat'
     },
     {
       title: 'Karan Vaswani',
-      src: '/mentors/karanvaswani.png',
+      src: '/karanvaswani.png',
       designation: 'Full Stack Developer ',
       company: 'Deployd.io',
       linkedin: 'https://www.linkedin.com/in/karan-v-270102'
     },
     {
       title: 'Ekta Arora',
-      src: '/mentors/ektaarora.png',
+      src: '/ektaarora.png',
       designation: 'Ex-SDE intern ',
       company: 'Prodigy InfoTech',
       linkedin: 'http://linkedin.com/in/ektaarora01'
     },
     {
       title: 'Vinit Vijal',
-      src: '/mentors/vinitvijal.png',
+      src: '/vinitvijal.png',
       designation: 'SDE-1',
       company: 'SBT Inc., Canada',
       linkedin: 'https://www.linkedin.com/in/vinitvijal'
     },
     {
       title: 'Mohammad Jari',
-      src: '/mentors/mohammadjari.png',
+      src: '/mohammadjari.png',
       designation: 'Data Scientist and Ai Trainer',
       company: 'Ikigai school of ai',
       linkedin: 'https://www.linkedin.com/in/mohammadjari'
     },
     {
       title: 'Nandini Singh ',
-      src: '/mentors/nandinisingh.png',
+      src: '/nandinisingh.png',
       designation: 'Jr. Associate - Data & AI',
       company: 'SoftwareOne',
       linkedin: 'https://www.linkedin.com/in/nandinisingh05'
     },
     {
       title: 'Isha Singh ',
-      src: '/mentors/ishasingh.jpg',
+      src: '/ishasingh.jpg',
       designation: ' AI enginner ',
       company: 'Fourmeta',
       linkedin: 'https://www.linkedin.com/in/isha-singh-aa26b4273'

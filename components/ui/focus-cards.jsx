@@ -41,7 +41,7 @@ export const Card = React.memo(
             {card.title}
           </h3>
           <div className="flex md:flex-row flex-col items-start mt-2 justify-between gap-2">
-            <div className="text-xs md:text-sm text-gray-200 space-y-1">
+            <div className="text-xs md:text-sm text-wrap text-gray-200 space-y-1">
               <p className="truncate">{card.designation}</p>
               <p className="font-semibold truncate">{card.company}</p>
             </div>

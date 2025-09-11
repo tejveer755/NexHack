@@ -42,7 +42,7 @@ export const Card = React.memo(
           </h3>
           <div className="flex md:flex-row flex-col items-start mt-2 justify-between gap-2">
             <div className="text-xs md:text-sm text-wrap text-gray-200 space-y-1">
-              <p className="truncate">{card.designation}</p>
+              <p className="truncate overflow-hidden text-wrap">{card.designation}</p>
               <p className="font-semibold truncate">{card.company}</p>
             </div>
             <Link href={card.linkedin} target="_blank" rel="noopener noreferrer">

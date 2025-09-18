@@ -3,9 +3,9 @@ import Image from "next/image"
 import Link from "next/link"
 import { FaDiscord, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
 
-export default function Footer() {
+export default function Footer({className}) {
     return (
-        <footer className="relative border-t border-gray-800   mt-48 text-white overflow-hidden">
+        <footer className={`relative border-t border-gray-800 mt-48 ${className} text-white overflow-hidden}`}>
             <div className="absolute inset-0  top-[0%] bg-gradient-to-t from-[#9b28732a]  via-[#3ca8c454] to-[#a332e054] [mask-image:radial-gradient(670px_circle_at_50%_0%,white,transparent)]"></div>
 
             {/* Main footer content */}

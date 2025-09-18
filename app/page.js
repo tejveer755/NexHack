@@ -17,19 +17,18 @@ import Loading from "@/components/loading";
 import { Announcement } from "@/components/Announcement";
 
 function Page() {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+  // useEffect(() => {
     
-      const timer = setTimeout(() => {
-        setLoading(false);
-      }, 5000); // Show loading for 2 seconds
-      return () => clearTimeout(timer);
+  //     const timer = setTimeout(() => {
+  //       setLoading(false);
+  //     }, 5000); // Show loading for 2 seconds
+  //     return () => clearTimeout(timer);
     
-  }, []);
+  // }, []);
 
-  if (loading) return <Loading />;
-  // console.log("page loaded on vercel");
+  // if (loading) return <Loading />;
   return (
     <div className="relative scroll-smooth">
       <Navbar />

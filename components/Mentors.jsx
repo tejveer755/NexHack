@@ -6,6 +6,7 @@ import { ExpandableWrapper } from './ui/ExpandableWrapper';
 
 function Mentors() {
   const cards = [
+    //judges
     {
       title: 'Naman Bakul',
       src: '/namanbakul.png',
@@ -20,6 +21,7 @@ function Mentors() {
       company: 'MongoDB',
       linkedin: 'https://www.linkedin.com/in/dheerajtechy'
     },
+    //offline mentors
     {
       title: 'Yash Chatrath',
       src: '/yashchatrath.png',
@@ -55,6 +57,7 @@ function Mentors() {
       company: 'PhysicsWallah',
       linkedin: 'https://www.linkedin.com/in/tushika-rawat'
     },
+    //online mentors
     {
       title: 'Karan Vaswani',
       src: '/karanvaswani.png',
@@ -62,13 +65,7 @@ function Mentors() {
       company: 'Deployd.io',
       linkedin: 'https://www.linkedin.com/in/karan-v-270102'
     },
-    {
-      title: 'Ekta Arora',
-      src: '/ektaarora.png',
-      designation: 'Ex-SDE intern ',
-      company: 'Prodigy InfoTech',
-      linkedin: 'http://linkedin.com/in/ektaarora01'
-    },
+   
     {
       title: 'Vinit Vijal',
       src: '/vinitvijal.png',
@@ -138,7 +135,7 @@ function Mentors() {
       title: "Animesh Singh",
       designation: "AI/ML Full stack developer",
       company: "Techverse Nexus",
-      linkedin: "https://www.linkedin.com/in/animeshsingh9693?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/animeshsingh9693",
       src: "animeshsingh.png"
     },
     {
@@ -156,11 +153,11 @@ function Mentors() {
       src: "paragcarpenter.png"
     },
     {
-      title: "Akshit Tiwari",
-      designation: "App Developer",
-      company: "",
-      linkedin: "https://www.linkedin.com/in/akshit-tiwarii?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      src: "akshittiwari.png"
+      title: "Ayush Ranjan",
+      designation: "Engineer",
+      company: "Delta6Labs Fintech",
+      linkedin: "https://www.linkedin.com/in/ayush-ranjan-131720207",
+      src: "ayushranjan.png"
     },
     {
       title: "Vaibhav Jain",
